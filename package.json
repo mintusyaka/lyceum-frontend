@@ -1,12 +1,8 @@
 {
-  "homepage": "https://mintusyaka.github.io/lyceum-frontend",
+  "homepage": "https://mintusyaka.github.io/lyceum-frontend/",
   "name": "frontend-new",
   "private": true,
   "version": "0.0.0",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mintusyaka/lyceum-frontend.git"
-  },
   "type": "module",
   "scripts": {
     "dev": "vite",
