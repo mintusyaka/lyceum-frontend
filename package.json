@@ -1,12 +1,17 @@
 {
-  "homepage": "http://mintusyaka.github.io/lyceum-frontend""name": "frontend-new",
+  "homepage": "https://mintusyaka.github.io/lyceum-frontend",
+  "name": "frontend-new",
   "private": true,
   "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mintusyaka/lyceum-frontend.git"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
