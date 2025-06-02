@@ -1,0 +1,220 @@
+
+import './ContactSection.css';
+
+import {useState} from 'react';
+
+import {CheckCircle, MapPin, Mail, Phone, Send} from 'lucide-react';
+
+function ContactSection() {
+
+    const [formData, setFormData] = useState({
+        parentName: '',
+        studentName: '',
+        phone: '',
+        email: '',
+        grade: '',
+        interests: '',
+        message: ''
+    });
+  
+    const [isSubmitted, setIsSubmitted] = useState(false);
+
+    const handleInputChange = (e) => {
+        setFormData({
+        ...formData,
+        [e.target.name]: e.target.value
+        });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // Here you would typically send data to your ASP.NET backend
+        // For demo purposes, we'll simulate submission
+        console.log('Form data to be sent to Google Spreadsheet:', formData);
+        setIsSubmitted(true);
+        
+        // Reset form after 3 seconds
+        setTimeout(() => {
+        setIsSubmitted(false);
+        setFormData({
+            parentName: '',
+            studentName: '',
+            phone: '',
+            email: '',
+            grade: '',
+            interests: '',
+            message: ''
+        });
+        }, 3000);
+    };
+
+    return (
+        <section id="contact" className="py-20 bg-gradient-to-r from-emerald-50 to-cyan-50">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+                <h3 className="text-4xl font-bold text-gray-900 mb-4">Зв'яжіться з нами</h3>
+                <p className="text-lg text-gray-600">Заповніть форму, і ми зв'яжемося з вами найближчим часом</p>
+            </div>
+            
+            <div className="grid lg:grid-cols-2 gap-12">
+                {/* Contact Form */}
+                <div className="bg-white p-8 rounded-xl shadow-sm">
+                {isSubmitted ? (
+                    <div className="text-center py-8">
+                    <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
+                    <h4 className="text-xl font-semibold text-gray-900 mb-2">Дякуємо за звернення!</h4>
+                    <p className="text-gray-600">Ми зв'яжемося з вами найближчим часом</p>
+                    </div>
+                ) : (
+                    <div className="space-y-6">
+                    <div className="grid md:grid-cols-2 gap-4">
+                        <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-2">Ім'я батька/матері</label>
+                        <input
+                            type="text"
+                            name="parentName"
+                            value={formData.parentName}
+                            onChange={handleInputChange}
+                            required
+                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                        />
+                        </div>
+                        <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-2">Ім'я дитини</label>
+                        <input
+                            type="text"
+                            name="studentName"
+                            value={formData.studentName}
+                            onChange={handleInputChange}
+                            required
+                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                        />
+                        </div>
+                    </div>
+                    
+                    <div className="grid md:grid-cols-2 gap-4">
+                        <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-2">Телефон</label>
+                        <input
+                            type="tel"
+                            name="phone"
+                            value={formData.phone}
+                            onChange={handleInputChange}
+                            required
+                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                        />
+                        </div>
+                        <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                        <input
+                            type="email"
+                            name="email"
+                            value={formData.email}
+                            onChange={handleInputChange}
+                            required
+                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                        />
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-2">Клас (орієнтовно)</label>
+                        <select
+                        name="grade"
+                        value={formData.grade}
+                        onChange={handleInputChange}
+                        required
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                        >
+                        <option value="">Оберіть клас</option>
+                        <option value="1">1 клас</option>
+                        <option value="2">2 клас</option>
+                        <option value="3">3 клас</option>
+                        <option value="4">4 клас</option>
+                        <option value="5">5 клас</option>
+                        <option value="6">6 клас</option>
+                        <option value="7">7 клас</option>
+                        <option value="8">8 клас</option>
+                        <option value="9">9 клас</option>
+                        <option value="10">10 клас</option>
+                        <option value="11">11 клас</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-2">Інтереси дитини</label>
+                        <input
+                        type="text"
+                        name="interests"
+                        value={formData.interests}
+                        onChange={handleInputChange}
+                        placeholder="Наприклад: математика, мистецтво, спорт..."
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                        />
+                    </div>
+                    
+                    <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-2">Додаткова інформація</label>
+                        <textarea
+                        name="message"
+                        value={formData.message}
+                        onChange={handleInputChange}
+                        rows={4}
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                        placeholder="Розкажіть більше про ваші очікування та питання..."
+                        ></textarea>
+                    </div>
+                    
+                    <div
+                        onClick={handleSubmit}
+                        className="w-full bg-gradient-to-r from-green-500 to-emerald-500 text-white py-4 rounded-lg font-medium hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center cursor-pointer"
+                    >
+                        <Send className="w-5 h-5 mr-2" />
+                        Відправити заявку
+                    </div>
+                    </div>
+                )}
+                </div>
+                
+                {/* Contact Info */}
+                <div className="space-y-8">
+                <div className="bg-white p-6 rounded-xl shadow-sm">
+                    <h4 className="text-xl font-semibold text-gray-900 mb-4">Контактна інформація</h4>
+                    <div className="space-y-4">
+                    <div className="flex items-center">
+                        <Phone className="w-5 h-5 text-blue-600 mr-3" />
+                        <span className="text-gray-700">+38 (067) 123-45-67</span>
+                    </div>
+                    <div className="flex items-center">
+                        <Mail className="w-5 h-5 text-blue-600 mr-3" />
+                        <span className="text-gray-700">info@lyceum-proactivity.ua</span>
+                    </div>
+                    <div className="flex items-start">
+                        <MapPin className="w-5 h-5 text-blue-600 mr-3 mt-1" />
+                        <span className="text-gray-700">вул. Освіти, 123<br />м. Львів, 79000</span>
+                    </div>
+                    </div>
+                </div>
+                
+                <div className="bg-white p-6 rounded-xl shadow-sm">
+                    <h4 className="text-xl font-semibold text-gray-900 mb-4">Режим роботи</h4>
+                    <div className="space-y-2 text-gray-700">
+                    <p><strong>Понеділок - П'ятниця:</strong> 8:00 - 18:00</p>
+                    <p><strong>Субота:</strong> 9:00 - 15:00</p>
+                    <p><strong>Неділя:</strong> Вихідний</p>
+                    </div>
+                </div>
+                
+                <div className="bg-gradient-to-r from-emerald-500 to-green-500 p-6 rounded-xl text-white">
+                    <h4 className="text-xl font-semibold mb-2">Запрошуємо на екскурсію!</h4>
+                    <p className="mb-4">Відвідайте наш ліцей, познайомтеся з педагогами та атмосферою навчання</p>
+                    <p className="text-blue-100">Екскурсії проводяться щосуботи о 10:00</p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+  );
+}
+
+export default ContactSection;

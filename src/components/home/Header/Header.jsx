@@ -168,7 +168,6 @@ import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { GraduationCap } from 'lucide-react';
 import { useState, useRef, useEffect } from 'react';
-import Logo from '../../../assets/lyceum-logo.png'
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
