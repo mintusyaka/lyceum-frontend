@@ -68,10 +68,10 @@ function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="#contact" className="bg-gradient-to-r from-green-600 to-emerald-600 text-white px-8 py-4 rounded-lg font-medium hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">
-                Записатися на консультацію
+                <p className='text-white'>Записатися на консультацію</p>
               </a>
               <a href="#about" className="border-2 border-green-600 text-green-600 px-8 py-4 rounded-lg font-medium hover:bg-green-200 transition-colors">
-                Дізнатися більше
+                <p className="text-gray-900">Дізнатися більше</p>
               </a>
             </div>
 
