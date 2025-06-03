@@ -26,14 +26,31 @@ function ContactSection() {
         });
     };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Here you would typically send data to your ASP.NET backend
-        // For demo purposes, we'll simulate submission
-        console.log('Form data to be sent to Google Spreadsheet:', formData);
+    const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const formUrl = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSeHg-V3Q_Byc8W4quxy_VlreUen-SszaZ3h1vt6WVhWZq5W4g/formResponse";
+
+    const formBody = new URLSearchParams();
+    formBody.append("entry.1005394950", formData.parentName);
+    formBody.append("entry.139863884", formData.studentName);
+    formBody.append("entry.874705588", formData.phone);
+    formBody.append("entry.123218155", formData.email);
+    formBody.append("entry.1184347914", formData.grade);
+    formBody.append("entry.881893326", formData.interests);
+    formBody.append("entry.778340436", formData.message);
+
+    try {
+        await fetch(formUrl, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+            "Content-Type": "application/x-www-form-urlencoded"
+        },
+        body: formBody.toString()
+        });
+
         setIsSubmitted(true);
-        
-        // Reset form after 3 seconds
         setTimeout(() => {
         setIsSubmitted(false);
         setFormData({
@@ -46,7 +63,12 @@ function ContactSection() {
             message: ''
         });
         }, 3000);
+    } catch (error) {
+        console.error("Помилка надсилання:", error);
+    }
     };
+
+
 
     return (
         <section id="contact" className="py-20 bg-gradient-to-r from-emerald-50 to-cyan-50">
