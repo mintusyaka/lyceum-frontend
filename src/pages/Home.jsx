@@ -7,6 +7,7 @@ import PricesSection from '../components/home/PricesSection/PricesSection';
 import ParentsSection from '../components/home/ParentsSection/ParentsSection';
 import ContactSection from '../components/home/ContactSection/ContactSection';
 import Footer from '../components/home/Footer/Footer';
+import ReviewsSection from '../components/home/Reviews/Reviews';
 
 function Home() {
   return (
@@ -30,6 +31,8 @@ function Home() {
 
       {/* Parents Info Section */}
       <ParentsSection />
+
+      <ReviewsSection />
 
       {/* Contact Section */}
       <ContactSection />
