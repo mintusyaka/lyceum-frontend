@@ -11,7 +11,7 @@ import PricesPage from './pages/PricesPage';
 
 function App() {
   return (
-    <BrowserRouter basename="/lyceum-frontend">
+    <BrowserRouter>
   <Routes>
     <Route path="/" element={<Home />} />
     <Route path="/about" element={<AboutPage />} />
