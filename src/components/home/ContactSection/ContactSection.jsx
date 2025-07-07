@@ -71,7 +71,7 @@ function ContactSection() {
 
 
     return (
-        <section id="contact" className="py-20 bg-gradient-to-r from-emerald-50 to-cyan-50">
+        <section id="contact" className="py-20 bg-gradient-to-r from-emerald-200 to-cyan-200">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
                 <h3 className="text-4xl font-bold text-gray-900 mb-4">Зв'яжіться з нами</h3>

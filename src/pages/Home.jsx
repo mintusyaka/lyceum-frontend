@@ -21,18 +21,18 @@ function Home() {
       <About />
 
       {/* Key Principles */}
-      <KeyPrinciplesSection />
+      {/* <KeyPrinciplesSection /> */}
 
       {/* Programs Section */}
       <ProgramsSection />
 
       {/* Prices Section */}
-      <PricesSection />
+      {/* <PricesSection /> */}
 
       {/* Parents Info Section */}
       <ParentsSection />
 
-      <ReviewsSection />
+      {/* <ReviewsSection /> */}
 
       {/* Contact Section */}
       <ContactSection />

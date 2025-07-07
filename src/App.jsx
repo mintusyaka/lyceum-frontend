@@ -7,6 +7,9 @@ import AboutPage from './pages/AboutPage';
 import ContactsPage from './pages/ContactsPage';
 import CurriculumsPage from './pages/CurriculumsPage';
 import PricesPage from './pages/PricesPage';
+import PrimarySchoolPlans from './pages/PrimarySchoolPlans';
+import MiddleSchoolPlans from './pages/MiddleSchoolPlans';
+import HighSchoolPlans from './pages/HighSchoolPans';
 
 
 function App() {
@@ -18,6 +21,9 @@ function App() {
     <Route path="/contacts" element={<ContactsPage />} />
     <Route path="/prices" element={<PricesPage />} />
     <Route path="/curriculums" element={<CurriculumsPage />} />
+    <Route path="/plans/primary-school" element={<PrimarySchoolPlans />} />
+    <Route path="/plans/middle-school" element={<MiddleSchoolPlans />} />
+    <Route path="/plans/high-school" element={<HighSchoolPlans />} />
 
   </Routes>
 </BrowserRouter>

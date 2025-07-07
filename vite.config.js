@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
-  base: '/lyceum-frontend',              // ensure relative paths, e.g. in index.html
+  base: '/',              // ensure relative paths, e.g. in index.html
 })

@@ -384,12 +384,13 @@ function Header() {
           <Link 
             to="/">
             <div className="ml-4 pt-10">
-              <h1 className="md:text-6xl sm:text-sm bg-gradient-to-bl from-green-500 to-emerald-500 bg-clip-text text-transparent font-bold hover:text-white transition-colors duration-500">
-                ЛІЦЕЙ 
-              </h1>
               <strong className="bg-gradient-to-bl from-green-500 to-emerald-500 bg-clip-text text-transparent font-bold hover:text-white transition-colors duration-500">
-                "ПРОАКТИВНІСТЬ"
+                ДИСТАНЦІЙНИЙ ЛІЦЕЙ
               </strong>
+              <h1 className="md:text-6xl sm:text-sm bg-gradient-to-bl from-green-500 to-emerald-500 bg-clip-text text-transparent font-bold hover:text-white transition-colors duration-500">
+                "ПРОАКТИВНІСТЬ" 
+              </h1>
+              
             </div>
           </Link>
           
