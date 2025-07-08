@@ -10,6 +10,7 @@ import PricesPage from './pages/PricesPage';
 import PrimarySchoolPlans from './pages/PrimarySchoolPlans';
 import MiddleSchoolPlans from './pages/MiddleSchoolPlans';
 import HighSchoolPlans from './pages/HighSchoolPans';
+import Plans from './pages/Plans';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
     <Route path="/plans/primary-school" element={<PrimarySchoolPlans />} />
     <Route path="/plans/middle-school" element={<MiddleSchoolPlans />} />
     <Route path="/plans/high-school" element={<HighSchoolPlans />} />
+    <Route path="/plans" element={<Plans />} />
 
   </Routes>
 </BrowserRouter>

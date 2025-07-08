@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { CheckCircle, X, Calendar, Clock } from 'lucide-react';
 
-function PrimaryPlans() {
+function AllPlans() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedPlan, setSelectedPlan] = useState('');
   const [isYearly, setIsYearly] = useState(false);
@@ -68,6 +68,27 @@ function PrimaryPlans() {
       accent_color: "from-cyan-500 to-emerald-500"
     },
     {
+      title: 'ЗДОБУВАЧ ОСВІТИ "ПРОАКТИВНИЙ" (5-9 клас)',
+      old_price_month: "3400",
+      price_month: "1800",
+      old_price_year: "34000",
+      price_year: "18000",
+      features: ["Малі класи (до 12 учнів)", "Харчування включено", "Продовжений день", "Додаткові секції", "Профорієнтація", "Підготовка до ЗНО"],
+      bg_color: "bg-gradient-to-br from-emerald-400 via-green-400 to-emerald-400",
+      accent_color: "from-emerald-500 to-blue-500",
+      popular: true
+    },
+    {
+      title: 'ЗДОБУВАЧ ОСВІТИ "ПРОАКТИВНИЙ" (10-11 клас)',
+      old_price_month: "4000",
+      price_month: "2000",
+      old_price_year: "40000",
+      price_year: "20000",
+      features: ["Малі класи (до 12 учнів)", "Харчування включено", "Продовжений день", "Додаткові секції", "Профорієнтація", "Підготовка до ЗНО", "Індивідуальні консультації", "Університетська підготовка"],
+      bg_color: "bg-gradient-to-br from-emerald-400 to-green-400",
+      accent_color: "from-blue-500 to-cyan-500"
+    },
+    {
       title: 'ЕКСТЕРНАТ (1-4 клас)',
       old_price_month: "3000",
       price_month: "1500",
@@ -79,6 +100,26 @@ function PrimaryPlans() {
       popular: true
     },
     {
+      title: 'ЕКСТЕРНАТ (5-9 клас)',
+      old_price_month: "3400",
+      price_month: "1800",
+      old_price_year: "34000",
+      price_year: "18000",
+      features: ["Малі класи (до 12 учнів)", "Харчування включено", "Продовжений день", "Додаткові секції", "Профорієнтація", "Підготовка до ЗНО"],
+      bg_color: "bg-gradient-to-br from-cyan-400 via-emerald-400 to-cyan-400",
+      accent_color: "from-emerald-500 to-blue-500",
+    },
+    {
+      title: 'ЕКСТЕРНАТ (10-11 клас)',
+      old_price_month: "4000",
+      price_month: "2000",
+      old_price_year: "40000",
+      price_year: "20000",
+      features: ["Малі класи (до 12 учнів)", "Харчування включено", "Продовжений день", "Додаткові секції", "Профорієнтація", "Підготовка до ЗНО", "Індивідуальні консультації", "Університетська підготовка"],
+      bg_color: "bg-gradient-to-br from-emerald-400 to-cyan-400",
+      accent_color: "from-blue-500 to-cyan-500"
+    },
+    {
       title: 'СІМЕЙНЕ НАВЧАННЯ (1-4 клас)',
       old_price_month: "3000",
       price_month: "1500",
@@ -88,6 +129,26 @@ function PrimaryPlans() {
       bg_color: "bg-gradient-to-br from-cyan-400 to-blue-400",
       accent_color: "from-cyan-500 to-emerald-500"
     },
+    {
+      title: 'СІМЕЙНЕ НАВЧАННЯ (5-9 клас)',
+      old_price_month: "3400",
+      price_month: "1800",
+      old_price_year: "34000",
+      price_year: "18000",
+      features: ["Малі класи (до 12 учнів)", "Харчування включено", "Продовжений день", "Додаткові секції", "Профорієнтація", "Підготовка до ЗНО"],
+      bg_color: "bg-gradient-to-br from-cyan-400 via-blue-400 to-cyan-400",
+      accent_color: "from-emerald-500 to-blue-500",
+    },
+    {
+      title: 'СІМЕЙНЕ НАВЧАННЯ (10-11 клас)',
+      old_price_month: "4000",
+      price_month: "2000",
+      old_price_year: "40000",
+      price_year: "20000",
+      features: ["Малі класи (до 12 учнів)", "Харчування включено", "Продовжений день", "Додаткові секції", "Профорієнтація", "Підготовка до ЗНО", "Індивідуальні консультації", "Університетська підготовка"],
+      bg_color: "bg-gradient-to-br from-blue-400 to-cyan-400",
+      accent_color: "from-blue-500 to-cyan-500"
+    }
   ];
 
   return (
@@ -365,4 +426,4 @@ function PrimaryPlans() {
   );
 }
 
-export default PrimaryPlans;
+export default AllPlans;

@@ -3,7 +3,7 @@ import './ContactSection.css';
 
 import {useState} from 'react';
 
-import {CheckCircle, MapPin, Mail, Phone, Send} from 'lucide-react';
+import {CheckCircle, MapPin, Mail, Phone, Send, InstagramIcon, FacebookIcon} from 'lucide-react';
 
 function ContactSection() {
 
@@ -205,19 +205,31 @@ function ContactSection() {
                     <div className="space-y-4">
                     <div className="flex items-center">
                         <Phone className="w-5 h-5 text-blue-600 mr-3" />
-                        <span className="text-gray-700">+38 (067) 123-45-67</span>
+                        <span className="text-gray-700">+38 (098) 023-03-30</span>
                     </div>
                     <div className="flex items-center">
-                        <Mail className="w-5 h-5 text-blue-600 mr-3" />
-                        <span className="text-gray-700">info@lyceum-proactivity.ua</span>
+                        <InstagramIcon className="w-5 h-5 text-pink-600 mr-3" />
+                        <a href="https://www.instagram.com/proactivity_lyceum?igsh=Mzl6OThhNXZrZ2Qw&utm_source=qr"><span className="font-normal text-gray-700">Instagram</span></a>
                     </div>
-                    <div className="flex items-start">
-                        <MapPin className="w-5 h-5 text-blue-600 mr-3 mt-1" />
-                        <span className="text-gray-700">вул. Освіти, 123<br />м. Львів, 79000</span>
+                    <div className="flex items-center">
+                        <FacebookIcon className="w-5 h-5 text-blue-600 mr-3" />
+                        <a href="https://www.facebook.com/share/1R52ehxNmx/?mibextid=wwXIfr"><span className="font-normal text-gray-700">Facebook</span></a>
+                    </div>
+                    <div className="flex items-center">
+                        <span class="[&>svg]:h-5 [&>svg]:w-5 mr-3">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor"
+                                viewBox="0 0 448 512">
+                                <path
+                                d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z" />
+                            </svg>
+                        </span>
+                        <a href="https://www.tiktok.com/@lyceum_proactivity_ua?_t=ZM-8xnrOP4y0Pt&_r=1"><span className="font-normal text-gray-700">TikTok</span></a>
                     </div>
                     </div>
                 </div>
-                
+{/*                 
                 <div className="bg-white p-6 rounded-xl shadow-sm">
                     <h4 className="text-xl font-semibold text-gray-900 mb-4">Режим роботи</h4>
                     <div className="space-y-2 text-gray-700">
@@ -225,13 +237,13 @@ function ContactSection() {
                     <p><strong>Субота:</strong> 9:00 - 15:00</p>
                     <p><strong>Неділя:</strong> Вихідний</p>
                     </div>
-                </div>
+                </div> */}
                 
-                <div className="bg-gradient-to-r from-emerald-500 to-green-500 p-6 rounded-xl text-white">
+                {/* <div className="bg-gradient-to-r from-emerald-500 to-green-500 p-6 rounded-xl text-white">
                     <h4 className="text-xl font-semibold mb-2">Запрошуємо на екскурсію!</h4>
                     <p className="mb-4">Відвідайте наш ліцей, познайомтеся з педагогами та атмосферою навчання</p>
                     <p className="text-blue-100">Екскурсії проводяться щосуботи о 10:00</p>
-                </div>
+                </div> */}
                 </div>
             </div>
             </div>

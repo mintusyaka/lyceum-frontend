@@ -62,6 +62,13 @@ function ProgramsSection() {
               </div>
             ))}
           </div>
+          <Link to={`plans`}>
+            <button className="bg-white border-2 border-emerald-600 text-emerald-600 hover:bg-emerald-50 hover:text-emerald-700 shadow-md hover:shadow-lg transition-all duration-300 mt-10 w-1/3 rounded-md py-2">
+              Переглянути всі плани
+            </button>
+
+          </Link>
+
         </div>
       </section>
   );
