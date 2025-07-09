@@ -11,24 +11,25 @@ import PrimarySchoolPlans from './pages/PrimarySchoolPlans';
 import MiddleSchoolPlans from './pages/MiddleSchoolPlans';
 import HighSchoolPlans from './pages/HighSchoolPans';
 import Plans from './pages/Plans';
+import ScrollToTop from './components/ScrollToTop';
 
 
 function App() {
   return (
     <BrowserRouter>
-  <Routes>
-    <Route path="/" element={<Home />} />
-    <Route path="/about" element={<AboutPage />} />
-    <Route path="/contacts" element={<ContactsPage />} />
-    <Route path="/prices" element={<PricesPage />} />
-    <Route path="/curriculums" element={<CurriculumsPage />} />
-    <Route path="/plans/primary-school" element={<PrimarySchoolPlans />} />
-    <Route path="/plans/middle-school" element={<MiddleSchoolPlans />} />
-    <Route path="/plans/high-school" element={<HighSchoolPlans />} />
-    <Route path="/plans" element={<Plans />} />
-
-  </Routes>
-</BrowserRouter>
+    <ScrollToTop />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<AboutPage />} />
+      <Route path="/contacts" element={<ContactsPage />} />
+      <Route path="/prices" element={<PricesPage />} />
+      <Route path="/curriculums" element={<CurriculumsPage />} />
+      <Route path="/plans/primary-school" element={<PrimarySchoolPlans />} />
+      <Route path="/plans/middle-school" element={<MiddleSchoolPlans />} />
+      <Route path="/plans/high-school" element={<HighSchoolPlans />} />
+      <Route path="/plans" element={<Plans />} />
+    </Routes>
+  </BrowserRouter>
 
   )
 }

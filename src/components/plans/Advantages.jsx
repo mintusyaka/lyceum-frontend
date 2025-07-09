@@ -65,7 +65,7 @@ function Advantages() {
             <h4 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 text-center">
               Дослідження прогресу
             </h4>
-            <ul className="space-y-4">
+            <ul className="text-left space-y-4">
               {[
                 "Детальний формат звіту для батьків",
                 "Оновлений прогрес здобувача освіти",
@@ -90,7 +90,7 @@ function Advantages() {
             <h4 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 text-center">
               Взаємодія та соціалізація
             </h4>
-            <ul className="space-y-4">
+            <ul className="text-left space-y-4">
               {[
                 "Групові проєкти (1–11 класи)",
                 "Друзі та клуби за інтересами",
@@ -115,7 +115,7 @@ function Advantages() {
             <h4 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 text-center">
               Мотивація навчання
             </h4>
-            <ul className="space-y-4">
+            <ul className="text-left space-y-4">
               {[
                 "Мій прогрес",
                 "Важливі події",
@@ -213,14 +213,6 @@ function Advantages() {
             P.S. У нас зараз знижки!
           </span>
         </div>
-
-        <button
-            onClick={() => window.open('/public/Питання_до_іспиту.pdf', '_blank')}
-            className="mt-10 bg-white text-emerald-600 border border-emerald-500 px-6 py-3 rounded-md hover:bg-emerald-50 transition"
-            >
-            Продивитись ліцензію
-        </button>
-
       </div>
     </section>
   );

@@ -1,13 +1,16 @@
+import Footer from "../components/home/Footer/Footer";
 import Header from "../components/home/Header/Header";
+import Advantages from "../components/plans/Advantages";
+import MiddleDescription from "../components/plans/MiddleDescription";
+import MiddlePlans from "../components/plans/MiddlePlans";
 
 function MiddleSchoolPlans() {
     return (
         <div className="min-h-screen shadow-lg">
             <Header />
-            Нижче має бути опис 5-9 класів, поки вставив "чому варто обрати"
+            <MiddleDescription />
+            <MiddlePlans />
             <Advantages />
-            {/* <ServicesTable /> */}
-            <PrimaryPlans / >
             <Footer />
         </div>
     );
