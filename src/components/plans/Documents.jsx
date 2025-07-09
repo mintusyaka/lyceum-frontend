@@ -4,7 +4,7 @@ function Documents() {
   const documents = [
     {
       title: 'Ліцензія на освітню діяльність',
-      file: '/Питання_до_іспиту.pdf',
+      file: 'https://www.rv.gov.ua/npas/pro-vydachu-litsenzii-na-pravo-provadzhennia-osvitnoi-diialnosti-u-sferi-povnoi-zahalnoi-serednoi-osvity-za-rivnem-pochatkovoi-bazovoi-serednoi-ta-profilnoi-serednoi-osvity',
       gradient: 'from-emerald-400 to-cyan-400'
     },
     {
