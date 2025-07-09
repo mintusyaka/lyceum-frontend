@@ -34,12 +34,6 @@ function HeroSection() {
               </div>
             </div>
             
-            {/* Floating elements */}
-            <div className="absolute top-20 left-10 w-20 h-20 bg-cyan-200 rounded-full opacity-20 animate-pulse"></div>
-            <div className="absolute bottom-70 left-40 w-10 h-10 bg-green-200 rounded-full opacity-5 animate-pulse duration-500 delay-150"></div>
-            <div className="absolute top-40 right-20 w-16 h-16 bg-green-200 rounded-full opacity-30 animate-bounce"></div>
-            <div className="absolute top-90 left-1/4 w-12 h-12 bg-blue-200 rounded-full opacity-25 animate-pulse"></div>
-            <div className="absolute top-115 right-40 w-14 h-14 bg-blue-200 rounded-full opacity-25 animate-pulse duration-300"></div>
           </section>
   );
 }
