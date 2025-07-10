@@ -135,7 +135,7 @@ function MiddlePlans() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-12 md:mb-16">
             <h3 className="text-3xl md:text-4xl lg:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-600 mb-4">
-              ВАРТІСТЬ НАВЧАННЯ
+              Вартість навчання 2025-2026 навчальний рік
             </h3>
             <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
               Інвестиція в майбутнє вашої дитини
@@ -166,9 +166,6 @@ function MiddlePlans() {
               >
                 <Calendar className="w-5 h-5" />
                 <span className="font-medium">Щорічно</span>
-                <span className="bg-green-400 text-white text-xs px-2 py-1 rounded-full">
-                  -17%
-                </span>
               </button>
             </div>
           </div>
