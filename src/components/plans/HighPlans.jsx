@@ -247,7 +247,8 @@ function HighPlans() {
                       className={`w-full py-4 rounded-2xl font-bold text-lg transition-all duration-300 transform hover:scale-105 ${
                         plan.popular
                           ? `bg-gradient-to-r ${plan.accent_color} text-white shadow-lg hover:shadow-xl`
-                          : `border-2 border-gray-300 text-gray-700 hover:border-blue-500 hover:text-blue-600 hover:bg-blue-50`
+                          : `bg-gradient-to-r ${plan.accent_color} text-white shadow-lg hover:shadow-xl`
+                          // : `border-2 border-gray-300 text-gray-700 hover:border-blue-500 hover:text-blue-600 hover:bg-blue-50`
                       }`}
                     >
                       Обрати план
