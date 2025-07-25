@@ -8,7 +8,7 @@ function Documents() {
       gradient: 'from-emerald-400 to-cyan-400'
     },
     {
-      title: 'Освітня програма 1–4 класи',
+      title: 'Освітня програма',
       file: '/docs/program-1-4.pdf',
       gradient: 'from-blue-400 to-emerald-400'
     },
@@ -17,7 +17,7 @@ function Documents() {
       file: '/docs/admission-rules.pdf',
       gradient: 'from-purple-400 to-cyan-400'
     }
-  ];
+  ];  
 
   return (
     <section className="py-16 sm:py-20 lg:py-24 bg-gradient-to-r from-cyan-200 to-emerald-200 relative overflow-hidden">

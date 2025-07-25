@@ -209,7 +209,7 @@ function ContactSection() {
                     </div>
                     <div className="flex items-center">
                         <InstagramIcon className="w-5 h-5 text-pink-600 mr-3" />
-                        <a href="https://www.instagram.com/proactivity_lyceum?igsh=Mzl6OThhNXZrZ2Qw&utm_source=qr"><span className="font-normal text-gray-700">Instagram</span></a>
+                        <a href="https://www.instagram.com/proactivity_lyceum_online?igsh=Mzl6OThhNXZrZ2Qw&utm_source=qr"><span className="font-normal text-gray-700">Instagram</span></a>
                     </div>
                     <div className="flex items-center">
                         <FacebookIcon className="w-5 h-5 text-blue-600 mr-3" />

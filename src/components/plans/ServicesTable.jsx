@@ -173,7 +173,7 @@ const services = [
   },
   {
     name: 'Повний доступ до освітніх матеріалів',
-    stars: [true, true, false],
+    stars: [true, true, true],
   },
   {
     name: 'Інтерактивні програми, навчальні ігри та моделі 3D',
@@ -189,7 +189,7 @@ const services = [
   },
   {
     name: 'Перевірка письмових та практичних робіт',
-    stars: [true, true, false],
+    stars: [true, true, true],
   },
   {
     name: 'Технічна підтримка 24/7',

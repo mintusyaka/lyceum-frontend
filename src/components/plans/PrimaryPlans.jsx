@@ -63,30 +63,20 @@ function PrimaryPlans() {
       price_month: "1500",
       old_price_year: "30000",
       price_year: "15000",
-      features: ["Малі класи (до 12 учнів)", "Харчування включено", "Продовжений день"],
+      features: ["Малі класи (до 15 учнів)", "Нова Українська Школа", "STEM-освіта", "\"Живе\" онлайн навчання", "Відеозаписи уроків"],
       bg_color: "bg-gradient-to-br from-green-400 to-emerald-400",
       accent_color: "from-cyan-500 to-emerald-500"
     },
     {
-      title: 'ЕКСТЕРНАТ (1-4 клас)',
-      old_price_month: "3000",
-      price_month: "1500",
-      old_price_year: "30000",
-      price_year: "15000",
-      features: ["Малі класи (до 12 учнів)", "Харчування включено", "Продовжений день"],
-      bg_color: "bg-gradient-to-br from-cyan-400 to-emerald-400",
-      accent_color: "from-cyan-500 to-emerald-500",
-      popular: true
-    },
-    {
       title: 'СІМЕЙНЕ НАВЧАННЯ (1-4 клас)',
-      old_price_month: "3000",
-      price_month: "1500",
-      old_price_year: "30000",
-      price_year: "15000",
-      features: ["Малі класи (до 12 учнів)", "Харчування включено", "Продовжений день"],
+      old_price_month: "1000",
+      price_month: "500",
+      old_price_year: "10000",
+      price_year: "5000",
+      features: ["Зв'язок з класним керівником", "Письмові та усні завдання від учителів", "Атестація знань", "Індивідуальні консультації", "Перегляд записів онлайн уроків", "Свідоцтво досягнень/табель", "Документ про освіту"],
       bg_color: "bg-gradient-to-br from-cyan-400 to-blue-400",
-      accent_color: "from-cyan-500 to-emerald-500"
+      accent_color: "from-cyan-500 to-emerald-500",
+      family: true,
     },
   ];
 

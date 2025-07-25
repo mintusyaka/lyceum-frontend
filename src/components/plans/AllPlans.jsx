@@ -26,7 +26,7 @@ function AllPlans() {
 
   const handleSubmit = () => {
     if (!formData.name.trim() || !formData.phone.trim()) {
-      alert('Будь ласка, заповніть всі обов\'язкові поля');
+      alert('Будь ласка, заповніть всі обов\'язкові ');
       return;
     }
     
@@ -63,7 +63,7 @@ function AllPlans() {
       price_month: "1500",
       old_price_year: "30000",
       price_year: "15000",
-      features: ["Малі класи (до 12 учнів)", "Харчування включено", "Продовжений день"],
+      features: ["Малі класи (до 15 учнів)", "Нова Українська Школа", "STEM-освіта", "\"Живе\" онлайн навчання", "Відеозаписи уроків"],
       bg_color: "bg-gradient-to-br from-green-400 to-emerald-400",
       accent_color: "from-cyan-500 to-emerald-500"
     },
@@ -73,7 +73,7 @@ function AllPlans() {
       price_month: "1800",
       old_price_year: "34000",
       price_year: "18000",
-      features: ["Малі класи (до 12 учнів)", "Харчування включено", "Продовжений день", "Додаткові секції", "Профорієнтація", "Підготовка до ЗНО"],
+      features: ["Малі класи (до 15 учнів)", "Профорієнтація", "Індивідуальні консультації", "Розвиток особистості", "НУШ для 5-8 класів", "Підготовка до ДПА"],
       bg_color: "bg-gradient-to-br from-emerald-400 via-green-400 to-emerald-400",
       accent_color: "from-emerald-500 to-blue-500",
       popular: true
@@ -84,20 +84,9 @@ function AllPlans() {
       price_month: "2000",
       old_price_year: "40000",
       price_year: "20000",
-      features: ["Малі класи (до 12 учнів)", "Харчування включено", "Продовжений день", "Додаткові секції", "Профорієнтація", "Підготовка до ЗНО", "Індивідуальні консультації", "Університетська підготовка"],
+      features: ["Малі класи (до 15 учнів)", "Профорієнтація", "Підготовка до ЗНО/НМТ", "Індивідуальні консультації", "Університетська підготовка"],
       bg_color: "bg-gradient-to-br from-emerald-400 to-green-400",
       accent_color: "from-blue-500 to-cyan-500"
-    },
-    {
-      title: 'ЕКСТЕРНАТ (1-4 клас)',
-      old_price_month: "3000",
-      price_month: "1500",
-      old_price_year: "30000",
-      price_year: "15000",
-      features: ["Малі класи (до 12 учнів)", "Харчування включено", "Продовжений день"],
-      bg_color: "bg-gradient-to-br from-cyan-400 to-emerald-400",
-      accent_color: "from-cyan-500 to-emerald-500",
-      popular: true
     },
     {
       title: 'ЕКСТЕРНАТ (5-9 клас)',
@@ -105,7 +94,7 @@ function AllPlans() {
       price_month: "1800",
       old_price_year: "34000",
       price_year: "18000",
-      features: ["Малі класи (до 12 учнів)", "Харчування включено", "Продовжений день", "Додаткові секції", "Профорієнтація", "Підготовка до ЗНО"],
+      features: ["Повний доступ до освітнього процесу", "Комбіновані уроки з елементами анімації та мультиплікації, навчальні ігри та моделі 3D", "Постійний зв'язок із класним керівником", "ДПА в дистанційній формі", "Державний документ про освіту"],
       bg_color: "bg-gradient-to-br from-cyan-400 via-emerald-400 to-cyan-400",
       accent_color: "from-emerald-500 to-blue-500",
     },
@@ -115,39 +104,42 @@ function AllPlans() {
       price_month: "2000",
       old_price_year: "40000",
       price_year: "20000",
-      features: ["Малі класи (до 12 учнів)", "Харчування включено", "Продовжений день", "Додаткові секції", "Профорієнтація", "Підготовка до ЗНО", "Індивідуальні консультації", "Університетська підготовка"],
+      features: ["Повний доступ до освітнього процесу", "Комбіновані уроки з елементами анімації та мультиплікації, навчальні ігри та моделі 3D", "Постійний зв'язок із класним керівником", "ДПА в дистанційній формі, а ЗНО/НМТ за місцем проживання", "Повна перевірка робіт", "Державний документ про освіту"],
       bg_color: "bg-gradient-to-br from-emerald-400 to-cyan-400",
       accent_color: "from-blue-500 to-cyan-500"
     },
     {
       title: 'СІМЕЙНЕ НАВЧАННЯ (1-4 клас)',
-      old_price_month: "3000",
-      price_month: "1500",
-      old_price_year: "30000",
-      price_year: "15000",
-      features: ["Малі класи (до 12 учнів)", "Харчування включено", "Продовжений день"],
+      old_price_month: "1000",
+      price_month: "500",
+      old_price_year: "10000",
+      price_year: "5000",
+      features: ["Зв'язок з класним керівником", "Письмові та усні завдання від учителів", "Атестація знань", "Індивідуальні консультації", "Перегляд записів онлайн уроків", "Свідоцтво досягнень/табель", "Документ про освіту"],
       bg_color: "bg-gradient-to-br from-cyan-400 to-blue-400",
-      accent_color: "from-cyan-500 to-emerald-500"
+      accent_color: "from-cyan-500 to-emerald-500",
+      family: true,
     },
     {
       title: 'СІМЕЙНЕ НАВЧАННЯ (5-9 клас)',
-      old_price_month: "3400",
-      price_month: "1800",
-      old_price_year: "34000",
-      price_year: "18000",
-      features: ["Малі класи (до 12 учнів)", "Харчування включено", "Продовжений день", "Додаткові секції", "Профорієнтація", "Підготовка до ЗНО"],
+      old_price_month: "1400",
+      price_month: "700",
+      old_price_year: "14000",
+      price_year: "7000",
+      features: ["Письмові та усні завдання з перевіркою від учителів", "Письмовий чат і консультації онлайн з учителями ", "Звязок із класним керівником", "Інтерактивні платформи для вивчення іноземних мов(оплачуються додатково)", "Звіт про успішність", "Додатково можна отримати довідку про те, що дитина навчається дистанційно та виписку навчальних результатів", "Дистанційне проведення ДПА", "Документ про базову загальну середню освіту"],
       bg_color: "bg-gradient-to-br from-cyan-400 via-blue-400 to-cyan-400",
       accent_color: "from-emerald-500 to-blue-500",
+      family: true,
     },
     {
       title: 'СІМЕЙНЕ НАВЧАННЯ (10-11 клас)',
-      old_price_month: "4000",
-      price_month: "2000",
-      old_price_year: "40000",
-      price_year: "20000",
-      features: ["Малі класи (до 12 учнів)", "Харчування включено", "Продовжений день", "Додаткові секції", "Профорієнтація", "Підготовка до ЗНО", "Індивідуальні консультації", "Університетська підготовка"],
+      old_price_month: "9000",
+      price_month: "900",
+      old_price_year: "18000",
+      price_year: "9000",
+      features: ["Письмові завдання з перевіркою від учителів", "Зв'язок із вчителями", "Звіт про досягнення", "Атестація знань", "Контроль за успішність", "Онлайн консультації до ЗНО/НМТ", "Документ про повну загальну середню освіту державного зразка"],
       bg_color: "bg-gradient-to-br from-blue-400 to-cyan-400",
-      accent_color: "from-blue-500 to-cyan-500"
+      accent_color: "from-blue-500 to-cyan-500",
+      family: true,
     }
   ];
 
@@ -262,6 +254,7 @@ function AllPlans() {
                   <div className="p-6 pb-4 text-center">
                     <div className="space-y-2">
                       {/* Old price */}
+                      {!plan.family && (
                       <div className="flex items-center justify-center space-x-2">
                         <span className="text-lg md:text-xl font-bold text-gray-400 line-through">
                           {isYearly ? plan.old_price_year : plan.old_price_month}
@@ -270,6 +263,8 @@ function AllPlans() {
                           {isYearly ? 'грн/рік' : 'грн/місяць'}
                         </span>
                       </div>
+                    )}
+
 
                       {/* New price */}
                       <div className="flex items-baseline justify-center space-x-2">
@@ -281,7 +276,7 @@ function AllPlans() {
                         </span>
                       </div>
 
-                      {isYearly && (
+                      {isYearly && !plan.family && (
                         <div className="inline-block bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full font-medium">
                           Економія {(parseInt(plan.old_price_month) * 12) - parseInt(plan.price_year)} грн/рік
                         </div>
@@ -293,7 +288,7 @@ function AllPlans() {
                   <div className="px-6 pb-6 flex-1">
                     <ul className="space-y-3">
                       {plan.features.map((feature, idx) => (
-                        <li key={idx} className="flex items-start text-gray-700">
+                        <li key={idx} className="flex text-left items-start text-gray-700">
                           <CheckCircle className="w-5 h-5 text-emerald-500 mr-3 flex-shrink-0 mt-0.5" />
                           <span className="text-sm leading-relaxed">{feature}</span>
                         </li>
@@ -308,7 +303,8 @@ function AllPlans() {
                       className={`w-full py-4 rounded-2xl font-bold text-lg transition-all duration-300 transform hover:scale-105 ${
                         plan.popular
                           ? `bg-gradient-to-r ${plan.accent_color} text-white shadow-lg hover:shadow-xl`
-                          : `border-2 border-gray-300 text-gray-700 hover:border-blue-500 hover:text-blue-600 hover:bg-blue-50`
+                          : `bg-gradient-to-r ${plan.accent_color} text-white shadow-lg hover:shadow-xl`
+                          // : `border-2 border-gray-300 text-gray-700 hover:border-blue-500 hover:text-blue-600 hover:bg-blue-50`
                       }`}
                     >
                       Обрати план
