@@ -220,12 +220,6 @@ function MiddlePlans() {
                           {isYearly ? 'грн/рік' : 'грн/місяць'}
                         </span>
                       </div>
-
-                      {isYearly && (
-                        <div className="inline-block bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full font-medium">
-                          Економія {(parseInt(plan.old_price_month) * 12) - parseInt(plan.price_year)} грн/рік
-                        </div>
-                      )}
                     </div>
                   </div>
 
