@@ -78,7 +78,7 @@ function HighPlans() {
       accent_color: "from-blue-500 to-cyan-500"
     },
     {
-      title: 'СІМЕЙНЕ НАВЧАННЯ (1-4 клас)',
+      title: 'СІМЕЙНЕ НАВЧАННЯ (10-11 клас)',
       old_price_month: "1000",
       price_month: "500",
       old_price_year: "10000",
