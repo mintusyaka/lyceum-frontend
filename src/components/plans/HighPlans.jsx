@@ -88,6 +88,17 @@ function HighPlans() {
       accent_color: "from-cyan-500 to-emerald-500",
       family: true,
     },
+    {
+      title: 'УКРАЇНОЗНАВЧИЙ КОМПОНЕНТ (10-11 клас)',
+      old_price_month: "1800",
+      price_month: "900",
+      old_price_year: "18000",
+      price_year: "9000",
+      features: ["Державний документ про освіту", "Доступ до предметів українознавчого компоненту + 2 навчальних предмета", "Перезарахування оцінок з іноземної школи", "Допоміжні матеріали: відео, аудіо, 3D-моделі", "Автоматизована перевірка робіт", "НМТ у місті проживання", "Додаткові сервіси"],
+      bg_color: "bg-gradient-to-br from-cyan-400 to-blue-400",
+      accent_color: "from-cyan-500 to-emerald-500",
+      family: true,
+    },
   ];
 
   return (

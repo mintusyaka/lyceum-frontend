@@ -9,13 +9,29 @@ function Documents() {
     },
     {
       title: 'Освітня програма',
-      file: '/docs/program-1-4.pdf',
-      gradient: 'from-blue-400 to-emerald-400'
+      file: 'https://drive.google.com/drive/folders/1_PbBn9grBp8Wszq3zdvH3jJLkToxYIa9?usp=sharing',
+      gradient: 'from-cyan-400 to-emerald-400'
     },
     {
       title: 'Правила прийому',
-      file: '/docs/admission-rules.pdf',
-      gradient: 'from-purple-400 to-cyan-400'
+      file: 'https://drive.google.com/drive/folders/1-E0_YEzn2TZLzcvAT7odji0i6hNuKOdt?usp=sharing',
+      gradient: 'from-emerald-400 to-cyan-400'
+    },
+    {
+      title: 'Прозорість та відкритість',
+      file: 'https://drive.google.com/drive/folders/1kGNmFcYLjUM5zd-QrUzs4yhJOhqEBghc?usp=sharing',
+      gradient: 'from-cyan-400 to-emerald-400'
+    },
+    {
+      title: 'Проактивна команда',
+      file: 'https://drive.google.com/drive/folders/1nzG5lMhcSqC2qEZwBeiMtrctkrKV-SIh?usp=sharing',
+      gradient: 'from-emerald-400 to-cyan-400'
+    },
+    
+    {
+      title: 'Діяльність',
+      file: 'https://drive.google.com/drive/folders/1e-nkUML-hSkyeOWSTHoHoz7X3jSd-bWt?usp=sharing',
+      gradient: 'from-cyan-400 to-emerald-400'
     }
   ];  
 

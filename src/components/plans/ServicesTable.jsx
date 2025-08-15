@@ -160,80 +160,81 @@ const plans = [
   'Здобувач освіти "Проактивний"',
   'Екстерн',
   'Сімейне навчання',
+  'Українознавчий компонент'
 ];
 
 const services = [
   {
     name: 'Документ про освіту державного зразка',
-    stars: [true, true, true],
+    stars: [true, true, true, true],
   },
   {
     name: 'ДПА в дистанційній формі, а ЗНО/НМТ за місцем проживання',
-    stars: [true, true, true],
+    stars: [true, true, true, true],
   },
   {
     name: 'Повний доступ до освітніх матеріалів',
-    stars: [true, true, true],
+    stars: [true, true, true, true],
   },
   {
     name: 'Інтерактивні програми, навчальні ігри та моделі 3D',
-    stars: [true, true, false],
+    stars: [true, true, false, true],
   },
   {
     name: 'Додаткові навчальні сервіси, що входять у вартість пакету',
-    stars: [true, true, false],
+    stars: [true, true, false, true],
   },
   {
     name: 'Освітня платформа для вивчення іноземних мов в 1-11 класах (+1 предмет на вибір)',
-    stars: [true, true, false,],
+    stars: [true, true, false, false],
   },
   {
     name: 'Перевірка письмових та практичних робіт',
-    stars: [true, true, true],
+    stars: [true, true, true, true],
   },
   {
     name: 'Технічна підтримка 24/7',
-    stars: [true, true, false],
+    stars: [true, true, false, false],
   },
   {
     name: 'Звіт про успішність',
-    stars: [true, true, false],
+    stars: [true, true, false, false],
   },
   {
     name: 'Автоматизована перевірка робіт',
-    stars: [true, true, false],
+    stars: [true, true, false, true],
   },
   {
     name: 'Повна перевірка (письмових) робіт',
-    stars: [true, true, false],
+    stars: [true, true, false, true],
   },
   {
     name: 'Індивідуальні консультації',
-    stars: [true, false, true],
+    stars: [true, false, true, false],
   },
   {
     name: 'Онлайн-уроки (для 1-11 класів)',
-    stars: [true, false, false],
+    stars: [true, false, false, false],
   },
   {
     name: 'Зв\'язок із тютором',
-    stars: [true, false, false],
+    stars: [true, false, false, false],
   },
   {
     name: 'Групова робота та проєктна діяльність у 1-11 класах',
-    stars: [true, false, false],
+    stars: [true, false, false, false],
   },
   {
     name: 'Групові онлайн уроки (у класі до 15 учнів)',
-    stars: [true, false, false],
+    stars: [true, false, false, false],
   },
   {
     name: 'Майстер-класи (офлайн та онлайн)',
-    stars: [true, false, false],
+    stars: [true, false, false, false],
   },
   {
     name: 'Підготовка до ДПА/НМТ/ЗНО',
-    stars: [true, false, false],
+    stars: [true, false, false, false],
   },
 ];
 
@@ -242,6 +243,7 @@ const getHeaderBgClass = (index) => {
     'bg-gradient-to-br from-amber-400 to-orange-500 text-white shadow-lg',
     'bg-gradient-to-br from-blue-500 to-purple-600 text-white shadow-lg',
     'bg-gradient-to-br from-emerald-400 to-teal-500 text-white shadow-lg',
+    'bg-gradient-to-br from-blue-400 to-cyan-500 text-white shadow-lg',
   ];
   return colors[index] || '';
 };
@@ -251,6 +253,7 @@ const getStarColorClass = (index) => {
     'text-amber-500',
     'text-blue-500',
     'text-emerald-500',
+    'text-cyan-500',
   ];
   return starColors[index] || 'text-gray-300';
 };
@@ -328,7 +331,7 @@ export default function ServicesTable() {
               >
                 <td className="p-6 border-r border-gray-200 border-t border-gray-100">
                   <div className="flex items-center justify-between">
-                    <span className="text-gray-800 font-medium text-sm leading-relaxed group-hover:text-blue-900 transition-colors">
+                    <span className="text-gray-800 font-medium text-sm leading-relaxed group-hover:text-blue-900 transition-colors text-left">
                       {service.name}
                     </span>
                   </div>
