@@ -248,7 +248,7 @@ function ContactSection() {
                 <div className="flex items-center">
                   <TelegramIcon className="w-5 h-5 text-sky-500 mr-3" />
                   <a
-                    href="https://t.me/@lyceum_proactivity"
+                    href="https://t.me/+380980230330"
                     target="_blank"
                     rel="noreferrer"
                     className="text-gray-700 hover:underline"
