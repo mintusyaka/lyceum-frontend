@@ -205,7 +205,12 @@ function ContactSection() {
                     <div className="space-y-4">
                     <div className="flex items-center">
                         <Phone className="w-5 h-5 text-blue-600 mr-3" />
-                        <span className="text-gray-700">+38 (098) 023-03-30 (Telegram / WhatsApp)</span>
+<a
+  href="tel:+380980230330"
+  className="text-gray-700 hover:underline"
+>
+  +38 (098) 023-03-30 (Telegram / WhatsApp)
+</a>
                     </div>
                     <div className="flex items-center">
                         <InstagramIcon className="w-5 h-5 text-pink-600 mr-3" />
