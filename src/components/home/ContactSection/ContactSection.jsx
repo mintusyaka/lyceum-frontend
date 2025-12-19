@@ -12,21 +12,11 @@ import {
 } from 'lucide-react';
 
 // --- Brand icons (SVG) ---
-const TELEGRAM_USERNAME = 'YOUR_USERNAME';
-
-const openTelegram = (e) => {
-  e.preventDefault();
-  const appLink = `tg://resolve?domain=${TELEGRAM_USERNAME}`;
-  const webLink = `https://t.me/${TELEGRAM_USERNAME}`;
-
-  // пытаемся открыть приложение
-  window.location.href = appLink;
-
-  // fallback: если приложение не открылось — откроем web
-  setTimeout(() => {
-    window.open(webLink, '_blank', 'noopener,noreferrer');
-  }, 500);
-};
+const TelegramIcon = (props) => (
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
+    <path d="M21.9 4.6c.2-1-0.8-1.7-1.7-1.3L2.7 10.5c-1 .4-.9 1.8.1 2.1l4.6 1.6 1.7 5.3c.3.9 1.4 1 1.9.3l2.7-3.5 4.6 3.4c.7.5 1.7.1 1.9-.8l1.9-14.3ZM9.6 14.5l9.4-8.3-7.7 9.5-.3 3.7-1.6-4.7-3.8-1.3 13.9-5.6-10 6.8Z" />
+  </svg>
+);
 
 const WhatsAppIcon = (props) => (
   <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
@@ -255,17 +245,17 @@ function ContactSection() {
                 </div>
 
                 {/* Telegram */}
-<div className="flex items-center">
-  <TelegramIcon className="w-5 h-5 text-sky-500 mr-3" />
-  <a
-    href={`https://t.me/${TELEGRAM_USERNAME}`}
-    onClick={openTelegram}
-    className="text-gray-700 hover:underline"
-  >
-    Telegram
-  </a>
-</div>
-
+                <div className="flex items-center">
+                  <TelegramIcon className="w-5 h-5 text-sky-500 mr-3" />
+                  <a
+                    href="https://t.me/@lyceum_proactivity"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-gray-700 hover:underline"
+                  >
+                    Telegram
+                  </a>
+                </div>
 
                 {/* WhatsApp */}
                 <div className="flex items-center">
