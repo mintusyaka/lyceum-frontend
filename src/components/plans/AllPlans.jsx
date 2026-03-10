@@ -58,11 +58,11 @@ function AllPlans() {
 
   const plans = [
     {
-      title: 'ЗДОБУВАЧ ОСВІТИ "ПРОАКТИВНИЙ" (1-4 клас)',
-      old_price_month: "3000",
-      price_month: "1500",
-      old_price_year: "30000",
-      price_year: "15000",
+      title: 'ЗДОБУВАЧ ОСВІТИ «ПРОАКТИВНИЙ» (1-4 клас)',
+  
+      price_month: "3000",
+  
+      price_year: "30000",
       features: ["Малі класи (до 15 учнів)", "Нова Українська Школа", "STEM-освіта", "\"Живе\" онлайн навчання", "Відеозаписи уроків"],
       bg_color: "bg-gradient-to-br from-green-400 to-emerald-400",
       accent_color: "from-cyan-500 to-emerald-500"
