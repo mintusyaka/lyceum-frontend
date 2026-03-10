@@ -292,9 +292,7 @@ function AllPlans() {
                         <span className="text-lg md:text-xl font-bold text-gray-400 line-through">
                           {isYearly ? plan.old_price_year : plan.old_price_month}
                         </span>
-                        <span className="text-sm text-gray-500">
-                          {isYearly ? 'грн/рік' : 'грн/місяць'}
-                        </span>
+                        
                       </div>
                     )}
 
