@@ -58,7 +58,7 @@ function AllPlans() {
 
   const plans = [
     {
-      title: 'ЗДОБУВАЧ ОСВІТИ «ПРОАКТИВНИЙ»<br>1-4 клас',
+      title: 'ЗДОБУВАЧ ОСВІТИ «ПРОАКТИВНИЙ»\n1-4 клас',
   
       price_month: "3000",
   
