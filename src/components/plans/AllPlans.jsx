@@ -63,7 +63,7 @@ function AllPlans() {
       price_month: "3000",
   
       price_year: "30000",
-      features: ["Міні-класи до 15 учнів", "Нова Українська Школа (НУШ)", "STEM-освіта", "онлайн-заняття в реальному часі", "Записи уроків"],
+      features: ["Онлайн-заняття в реальному часі", "Міні-класи до 15 учнів", "Нова Українська Школа (НУШ)", "STEM-освіта", "Записи уроків"],
       bg_color: "bg-gradient-to-br from-green-400 to-emerald-400",
       accent_color: "from-cyan-500 to-emerald-500"
     },
@@ -73,7 +73,7 @@ function AllPlans() {
       price_month: "3400",
       old_price_year: "",
       price_year: "34000",
-      features: ["Міні-класи до 15 учнів", "Профорієнтація", "Індивідуальні консультації", "Розвиток особистості", "НУШ для 5-8 класів", "Підготовка до ДПА"],
+      features: ["Онлайн-заняття в реальному часі", "Міні-класи до 15 учнів", "Профорієнтація", "Індивідуальні консультації", "Розвиток особистості", "НУШ для 5-8 класів", "Підготовка до ДПА"],
       bg_color: "bg-gradient-to-br from-emerald-400 via-green-400 to-emerald-400",
       accent_color: "from-emerald-500 to-blue-500",
       popular: true
@@ -267,7 +267,7 @@ function AllPlans() {
                 {plan.popular && (
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
                     <div className="bg-gradient-to-r from-blue-400 to-cyan-400 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
-                      ⭐ Популярний
+                      ⭐ Популярний ⭐
                     </div>
                   </div>
                 )}
