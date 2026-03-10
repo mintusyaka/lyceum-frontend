@@ -32,7 +32,7 @@ function ParentsSection() {
             <div className="bg-gradient-to-br from-emerald-50 to-green-50 p-8 rounded-xl">
               <h4 className="text-xl font-semibold text-gray-900 mb-4">Підтримка батьків</h4>
               <p className="text-gray-600 mb-6">
-                Ми розуміємо, що освіта дитини - це спільна справа школи та родини. Тому ми забезпечуємо:
+                Ми розуміємо, що освіта дитини — це спільна справа школи та родини. Тому ми забезпечуємо:
               </p>
               <ul className="space-y-2 text-gray-600">
                 <li>• Щомісячні батьківські збори</li>
