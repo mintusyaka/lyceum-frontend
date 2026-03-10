@@ -58,7 +58,8 @@ function AllPlans() {
 
   const plans = [
     {
-      title: 'ЗДОБУВАЧ ОСВІТИ «ПРОАКТИВНИЙ» (1-4 клас)',
+      title: 'ЗДОБУВАЧ ОСВІТИ «ПРОАКТИВНИЙ»'
+        ' 1-4 клас',
   
       price_month: "3000",
   
@@ -68,7 +69,7 @@ function AllPlans() {
       accent_color: "from-cyan-500 to-emerald-500"
     },
     {
-      title: 'ЗДОБУВАЧ ОСВІТИ "ПРОАКТИВНИЙ" (5-9 клас)',
+      title: 'ЗДОБУВАЧ ОСВІТИ «ПРОАКТИВНИЙ» 5-9 клас',
       old_price_month: "",
       price_month: "3400",
       old_price_year: "",
@@ -79,7 +80,7 @@ function AllPlans() {
       popular: true
     },
     {
-      title: 'ЗДОБУВАЧ ОСВІТИ "ПРОАКТИВНИЙ" (10-11 клас)',
+      title: 'ЗДОБУВАЧ ОСВІТИ «ПРОАКТИВНИЙ» 10-11 клас',
       old_price_month: "",
       price_month: "4000",
       old_price_year: "",
