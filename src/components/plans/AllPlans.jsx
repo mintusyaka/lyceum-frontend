@@ -58,12 +58,12 @@ function AllPlans() {
 
   const plans = [
     {
-      title: 'ЗДОБУВАЧ ОСВІТИ «ПРОАКТИВНИЙ»\n1-4 клас',
+      title: 'ЗДОБУВАЧ ОСВІТИ «ПРОАКТИВНИЙ»1-4 клас',
   
       price_month: "3000",
   
       price_year: "30000",
-      features: ["Малі класи (до 15 учнів)", "Нова Українська Школа", "STEM-освіта", "\"Живе\" онлайн навчання", "Відеозаписи уроків"],
+      features: ["Міні-класи до 15 учнів", "Нова Українська Школа (НУШ)", "STEM-освіта", "онлайн-заняття в реальному часі", "Записи уроків"],
       bg_color: "bg-gradient-to-br from-green-400 to-emerald-400",
       accent_color: "from-cyan-500 to-emerald-500"
     },
@@ -73,7 +73,7 @@ function AllPlans() {
       price_month: "3400",
       old_price_year: "",
       price_year: "34000",
-      features: ["Малі класи (до 15 учнів)", "Профорієнтація", "Індивідуальні консультації", "Розвиток особистості", "НУШ для 5-8 класів", "Підготовка до ДПА"],
+      features: ["Міні-класи до 15 учнів", "Профорієнтація", "Індивідуальні консультації", "Розвиток особистості", "НУШ для 5-8 класів", "Підготовка до ДПА"],
       bg_color: "bg-gradient-to-br from-emerald-400 via-green-400 to-emerald-400",
       accent_color: "from-emerald-500 to-blue-500",
       popular: true
@@ -84,7 +84,7 @@ function AllPlans() {
       price_month: "4000",
       old_price_year: "",
       price_year: "40000",
-      features: ["Малі класи (до 15 учнів)", "Профорієнтація", "Підготовка до ЗНО/НМТ", "Індивідуальні консультації", "Університетська підготовка"],
+      features: ["Міні-класи до 15 учнів", "Профорієнтація", "Підготовка до ЗНО/НМТ", "Індивідуальні консультації", "Університетська підготовка"],
       bg_color: "bg-gradient-to-br from-emerald-400 to-green-400",
       accent_color: "from-blue-500 to-cyan-500"
     },
@@ -120,7 +120,7 @@ function AllPlans() {
       family: true,
     },
     {
-      title: 'СІМЕЙНЕ НАВЧАННЯ (5-9 клас)',
+      title: 'СІМЕЙНЕ НАВЧАННЯ 5-9 клас',
       old_price_month: "",
       price_month: "1400",
       old_price_year: "",
@@ -131,7 +131,7 @@ function AllPlans() {
       family: true,
     },
     {
-      title: 'СІМЕЙНЕ НАВЧАННЯ (10-11 клас)',
+      title: 'СІМЕЙНЕ НАВЧАННЯ 10-11 клас',
       old_price_month: "",
       price_month: "1800",
       old_price_year: "",
@@ -142,7 +142,7 @@ function AllPlans() {
       family: true,
     },
     {
-      title: 'УКРАЇНОЗНАВЧИЙ КОМПОНЕНТ (1-4 клас)',
+      title: 'УКРАЇНОЗНАВЧИЙ КОМПОНЕНТ 1-4 клас',
       old_price_month: "",
       price_month: "1200",
       old_price_year: "",
@@ -153,7 +153,7 @@ function AllPlans() {
       family: true,
     },
     {
-      title: 'УКРАЇНОЗНАВЧИЙ КОМПОНЕНТ (5-9 клас)',
+      title: 'УКРАЇНОЗНАВЧИЙ КОМПОНЕНТ 5-9 клас',
       old_price_month: "",
       price_month: "1500",
       old_price_year: "",
@@ -164,7 +164,7 @@ function AllPlans() {
       family: true,
     },
     {
-      title: 'УКРАЇНОЗНАВЧИЙ КОМПОНЕНТ (10-11 клас)',
+      title: 'УКРАЇНОЗНАВЧИЙ КОМПОНЕНТ 10-11 клас',
       old_price_month: "",
       price_month: "1800",
       old_price_year: "",
@@ -343,8 +343,11 @@ function AllPlans() {
           {/* Additional info */}
           <div className="mt-12 text-center">
             <p className="text-gray-600 text-sm md:text-base">
-              💡 Всі ціни вказані з урахуванням знижки. Детальну інформацію уточнюйте при оформленні заявки.
-            </p>
+  Для уточнення детальної інформації телефонуйте:{" "}
+  <a href="tel:+380980230330" className="font-semibold hover:underline">
+    098 023 03 30
+  </a>
+</p>
           </div>
         </div>
       </section>
