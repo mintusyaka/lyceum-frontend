@@ -89,7 +89,7 @@ function AllPlans() {
       accent_color: "from-blue-500 to-cyan-500"
     },
     {
-      title: 'ЕКСТЕРНАТ (5-9 клас)',
+      title: 'ЕКСТЕРНАТ 5-9 клас',
       old_price_month: "",
       price_month: "3400",
       old_price_year: "",
@@ -99,7 +99,7 @@ function AllPlans() {
       accent_color: "from-emerald-500 to-blue-500",
     },
     {
-      title: 'ЕКСТЕРНАТ (10-11 клас)',
+      title: 'ЕКСТЕРНАТ 10-11 клас',
       old_price_month: "",
       price_month: "4000",
       old_price_year: "",
@@ -109,7 +109,7 @@ function AllPlans() {
       accent_color: "from-blue-500 to-cyan-500"
     },
     {
-      title: 'СІМЕЙНЕ НАВЧАННЯ (1-4 клас)',
+      title: 'СІМЕЙНЕ НАВЧАННЯ 1-4 клас',
       old_price_month: "",
       price_month: "1000",
       old_price_year: "",
