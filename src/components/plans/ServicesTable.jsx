@@ -158,9 +158,9 @@ import { Circle, ChevronDown, ChevronUp } from 'lucide-react';
 
 const plans = [
   'Здобувач освіти «Проактивний»',
-  'Українознавчий компонент'
   'Екстерн',
   'Сімейне навчання',
+  'Українознавчий компонент'
 ];
 
 const services = [
