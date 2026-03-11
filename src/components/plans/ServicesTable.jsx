@@ -27,19 +27,19 @@ const services = [
   },
   {
     name: 'Повний доступ до освітніх матеріалів',
-    stars: [true, true, true, true],
+    stars: [true, true, false, true],
   },
   {
     name: 'Інтерактивні програми, навчальні ігри та моделі 3D',
-    stars: [true, true, false, true],
+    stars: [true, false, false, true],
   },
   {
     name: 'Додаткові навчальні сервіси, що входять у вартість пакету',
-    stars: [true, true, false, true],
+    stars: [true, false, false, false],
   },
   {
     name: 'Освітня платформа для вивчення іноземних мов в 1-11 класах (+1 предмет на вибір)',
-    stars: [true, true, false, false],
+    stars: [true, false, false, false],
   },
   {
     name: 'Перевірка письмових та практичних робіт',
@@ -47,47 +47,47 @@ const services = [
   },
   {
     name: 'Технічна підтримка 24/7',
-    stars: [true, true, false, false],
+    stars: [true, false, false, true],
   },
   {
     name: 'Звіт про успішність',
-    stars: [true, true, false, false],
+    stars: [true, true, true, true],
   },
   {
     name: 'Автоматизована перевірка робіт',
-    stars: [true, true, false, true],
+    stars: [true, true, true, true],
   },
   {
     name: 'Повна перевірка (письмових) робіт',
-    stars: [true, true, false, true],
+    stars: [true, true, true, true],
   },
   {
     name: 'Індивідуальні консультації',
-    stars: [true, false, true, false],
+    stars: [true, true, true, true],
   },
   {
     name: 'Онлайн-уроки (для 1-11 класів)',
-    stars: [true, false, false, false],
+    stars: [true, false, false, true],
   },
   {
     name: "Зв'язок із тютором",
-    stars: [true, false, false, false],
+    stars: [true, false, false, true],
   },
   {
     name: 'Групова робота та проєктна діяльність у 1-11 класах',
-    stars: [true, false, false, false],
+    stars: [true, false, false, true],
   },
   {
     name: 'Групові онлайн уроки (у класі до 15 учнів)',
-    stars: [true, false, false, false],
+    stars: [true, false, false, true],
   },
   {
     name: 'Майстер-класи (офлайн та онлайн)',
-    stars: [true, false, false, false],
+    stars: [true, true, true, true],
   },
   {
     name: 'Підготовка до ДПА/НМТ/ЗНО',
-    stars: [true, false, false, false],
+    stars: [true, true, true, true],
   },
 ];
 
