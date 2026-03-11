@@ -533,7 +533,7 @@ function Header() {
                 ДИСТАНЦІЙНИЙ ЛІЦЕЙ
               </strong>
               <h1 className="bg-gradient-to-bl from-green-500 to-emerald-500 bg-clip-text text-transparent font-bold hover:text-white transition-colors duration-500 leading-tight whitespace-nowrap" style={{fontSize: 'clamp(1.25rem, 8vw, 4rem)'}}>
-                "ПРОАКТИВНІСТЬ" 
+                «ПРОАКТИВНІСТЬ» 
               </h1>
             </div>
           </Link>
@@ -602,7 +602,7 @@ function Header() {
             <div className="absolute bottom-4 sm:bottom-6 lg:bottom-8 left-4 sm:left-6 right-4 sm:right-6">
               <div className="text-center p-3 sm:p-4 border-t border-gray-700">
                 <p className="text-gray-400 text-sm">
-                  ЛІЦЕЙ "ПРОАКТИВНІСТЬ"
+                  ЛІЦЕЙ «ПРОАКТИВНІСТЬ»
                 </p>
                 <p className="text-emerald-400 text-xs mt-1">
                   Розвиваємо майбутнє разом
