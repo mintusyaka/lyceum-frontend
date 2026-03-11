@@ -60,7 +60,7 @@ function PricesSection() {
                     ? 'bg-gradient-to-r from-green-500 to-emerald-500 text-white hover:shadow-lg' 
                     : 'border-2 border-emerald-500 text-gray-900 hover:bg-green-50'
                 }`}>
-                  Обрати план
+                  Обрати
                 </button>
               </div>
             ))}
