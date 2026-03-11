@@ -79,7 +79,7 @@ const services = [
     stars: [true, false, false, false],
   },
   {
-    name: 'Підготовка до ДПА/НМТ/ЗНО',
+    name: 'Підготовка до ДПА/НМТ',
     stars: [true, false, false, false],
   },
 ];
