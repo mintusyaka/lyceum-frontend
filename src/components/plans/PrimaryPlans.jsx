@@ -142,6 +142,7 @@ function PrimaryPlans() {
               Інвестиція в майбутнє вашої дитини
             </p>
           </div>
+          </div>
 
           {/* Period Toggle */}
           <div className="flex justify-center mb-12">

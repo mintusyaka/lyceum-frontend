@@ -5,8 +5,11 @@ const plans = [
   'Здобувач освіти «Проактивний»',
   'Екстерн',
   'Сімейне навчання',
-  'Українознавчий компонент'
+  'Українознавчий компонент',
 ];
+
+const displayOrder = [0, 3, 1, 2];
+const orderedPlans = displayOrder.map((index) => plans[index]);
 
 const services = [
   {
@@ -78,7 +81,7 @@ const services = [
     stars: [true, false, false, false],
   },
   {
-    name: 'Підготовка до ДПА/НМТ/ЗНО',
+    name: 'Підготовка до ДПА/НМТ',
     stars: [true, false, false, false],
   },
 ];
