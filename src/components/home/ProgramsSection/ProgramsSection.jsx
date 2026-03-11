@@ -19,21 +19,21 @@ function ProgramsSection() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                title: "Початкова школа (1-4 класи)",
+                title: "Початкова школа 1-4 класи",
                 features: ["Розвиток критичного мислення", "STEM-освіта", "Творчі проєкти", "Іноземні мови"],
                 highlight: "from-lime-500 to-emerald-500",
                 icon: Child,
                 path:"primary-school"
               },
               {
-                title: "Середня школа (5-9 класи)",
+                title: "Середня школа 5-9 класи",
                 features: ["Поглиблене вивчення предметів", "Проєктна діяльність", "Профорієнтація", "Лідерські програми"],
                 highlight: "from-emerald-500 to-blue-500",
                 icon: Teen,
                 path:"middle-school"
               },
               {
-                title: "Старша школа (10-11 класи)",
+                title: "Старша школа 10-11 класи",
                 features: ["Профільна освіта", "Підготовка до НМТ", "Університетські курси", "Стажування"],
                 highlight: "from-blue-500 to-cyan-500",
                 icon: Graduated,
