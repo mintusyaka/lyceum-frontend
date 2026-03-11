@@ -21,7 +21,7 @@
 
 // // //               <div className="ml-4 pt-10">
 // // //                 <h1 className="md:text-6xl sm:text-sm bg-linear-to-bl from-green-500 to-emerald-500 bg-clip-text text-transparent font-bold hover:animate-glow hover:text-white transition-colors duration-500">ЛІЦЕЙ </h1>
-// // //                 <strong className="bg-linear-to-bl from-green-500 to-emerald-500 bg-clip-text text-transparent font-bold hover:animate-glow hover:text-white transition-colors duration-500">"ПРОАКТИВНІСТЬ"</strong>
+// // //                 <strong className="bg-linear-to-bl from-green-500 to-emerald-500 bg-clip-text text-transparent font-bold hover:animate-glow hover:text-white transition-colors duration-500">ПРОАКТИВНІСТЬ</strong>
 // // //               </div>
 
 // // //               <div className='pt-10'>
