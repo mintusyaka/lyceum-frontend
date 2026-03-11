@@ -4,9 +4,17 @@ import { Circle } from 'lucide-react';
 const plans = [
   'Здобувач освіти «Проактивний»',
   'Екстерн',
-  'Сімейне навчання',
+  'Сімейне навччання',
   'Українознавчий компонент',
 ];
+
+// Новый порядок столбцов:
+// 0 = Проактивний
+// 3 = Українознавчий компонент
+// 1 = Екстерн
+// 2 = Сімейне навчання
+const displayOrder = [0, 3, 1, 2];
+const orderedPlans = displayOrder.map((index) => plans[index]);
 
 const services = [
   {
@@ -106,38 +114,42 @@ const getStarColorClass = (index) => {
 export default function ServicesTable() {
   const MobileView = () => (
     <div className="md:hidden space-y-4">
-      {plans.map((plan, planIndex) => (
-        <div key={planIndex} className="space-y-3">
-          <div
-            className={`p-4 rounded-2xl ${getHeaderBgClass(
-              planIndex
-            )} transform transition-all duration-200 hover:scale-105`}
-          >
-            <h3 className="text-lg font-bold text-center">{plan}</h3>
-          </div>
+      {orderedPlans.map((plan, visualIndex) => {
+        const planIndex = displayOrder[visualIndex];
 
-          <div className="space-y-2">
-            {services.map(
-              (service, serviceIndex) =>
-                service.stars[planIndex] && (
-                  <div
-                    key={serviceIndex}
-                    className="bg-white rounded-xl p-3 shadow-sm border border-gray-100 flex items-center justify-between"
-                  >
-                    <span className="text-sm text-gray-700 flex-1">
-                      {service.name}
-                    </span>
-                    <Circle
-                      className={`${getStarColorClass(planIndex)} ml-2`}
-                      fill="currentColor"
-                      size={16}
-                    />
-                  </div>
-                )
-            )}
+        return (
+          <div key={visualIndex} className="space-y-3">
+            <div
+              className={`p-4 rounded-2xl ${getHeaderBgClass(
+                visualIndex
+              )} transform transition-all duration-200 hover:scale-105`}
+            >
+              <h3 className="text-lg font-bold text-center">{plan}</h3>
+            </div>
+
+            <div className="space-y-2">
+              {services.map(
+                (service, serviceIndex) =>
+                  service.stars[planIndex] && (
+                    <div
+                      key={serviceIndex}
+                      className="bg-white rounded-xl p-3 shadow-sm border border-gray-100 flex items-center justify-between"
+                    >
+                      <span className="text-sm text-gray-700 flex-1">
+                        {service.name}
+                      </span>
+                      <Circle
+                        className={`${getStarColorClass(visualIndex)} ml-2`}
+                        fill="currentColor"
+                        size={16}
+                      />
+                    </div>
+                  )
+              )}
+            </div>
           </div>
-        </div>
-      ))}
+        );
+      })}
     </div>
   );
 
@@ -152,16 +164,19 @@ export default function ServicesTable() {
                   <span className="text-lg">Послуги</span>
                 </div>
               </th>
-              {plans.map((plan, colIndex) => (
+
+              {orderedPlans.map((plan, visualIndex) => (
                 <th
-                  key={colIndex}
+                  key={visualIndex}
                   className={`p-6 text-center relative ${
-                    colIndex < plans.length - 1 ? 'border-r border-gray-200' : ''
+                    visualIndex < orderedPlans.length - 1
+                      ? 'border-r border-gray-200'
+                      : ''
                   }`}
                 >
                   <div
                     className={`rounded-2xl p-4 ${getHeaderBgClass(
-                      colIndex
+                      visualIndex
                     )} transform transition-all duration-200 hover:scale-105`}
                   >
                     <div className="text-sm font-bold leading-tight">{plan}</div>
@@ -170,6 +185,7 @@ export default function ServicesTable() {
               ))}
             </tr>
           </thead>
+
           <tbody>
             {services.map((service, rowIndex) => (
               <tr
@@ -185,28 +201,35 @@ export default function ServicesTable() {
                     </span>
                   </div>
                 </td>
-                {service.stars.map((hasStar, colIndex) => (
-                  <td
-                    key={colIndex}
-                    className={`text-center p-6 border-t border-gray-100 ${
-                      colIndex < service.stars.length - 1
-                        ? 'border-r border-gray-200'
-                        : ''
-                    }`}
-                  >
-                    <div className="flex justify-center">
-                      <Circle
-                        className={`transform transition-all duration-200 ${
-                          hasStar
-                            ? `${getStarColorClass(colIndex)} scale-100 hover:scale-125`
-                            : 'text-gray-300 scale-90'
-                        }`}
-                        fill="currentColor"
-                        size={24}
-                      />
-                    </div>
-                  </td>
-                ))}
+
+                {displayOrder.map((planIndex, visualIndex) => {
+                  const hasStar = service.stars[planIndex];
+
+                  return (
+                    <td
+                      key={visualIndex}
+                      className={`text-center p-6 border-t border-gray-100 ${
+                        visualIndex < displayOrder.length - 1
+                          ? 'border-r border-gray-200'
+                          : ''
+                      }`}
+                    >
+                      <div className="flex justify-center">
+                        <Circle
+                          className={`transform transition-all duration-200 ${
+                            hasStar
+                              ? `${getStarColorClass(
+                                  visualIndex
+                                )} scale-100 hover:scale-125`
+                              : 'text-gray-300 scale-90'
+                          }`}
+                          fill="currentColor"
+                          size={24}
+                        />
+                      </div>
+                    </td>
+                  );
+                })}
               </tr>
             ))}
           </tbody>
@@ -228,21 +251,25 @@ export default function ServicesTable() {
         </div>
 
         <div className="grid grid-cols-1 gap-4 mb-8 md:hidden">
-          {plans.map((plan, index) => (
-            <div
-              key={index}
-              className={`p-6 rounded-2xl ${getHeaderBgClass(
-                index
-              )} transform transition-all duration-200 hover:scale-105`}
-            >
-              <h3 className="text-lg font-bold text-center mb-2">{plan}</h3>
-              <div className="text-center">
-                <span className="text-sm opacity-90">
-                  {services.filter((s) => s.stars[index]).length} послуг
-                </span>
+          {orderedPlans.map((plan, visualIndex) => {
+            const planIndex = displayOrder[visualIndex];
+
+            return (
+              <div
+                key={visualIndex}
+                className={`p-6 rounded-2xl ${getHeaderBgClass(
+                  visualIndex
+                )} transform transition-all duration-200 hover:scale-105`}
+              >
+                <h3 className="text-lg font-bold text-center mb-2">{plan}</h3>
+                <div className="text-center">
+                  <span className="text-sm opacity-90">
+                    {services.filter((s) => s.stars[planIndex]).length} послуг
+                  </span>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         <div className="bg-white rounded-3xl shadow-2xl border border-gray-200 overflow-hidden">
