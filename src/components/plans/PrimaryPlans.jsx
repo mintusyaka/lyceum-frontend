@@ -58,7 +58,7 @@ function PrimaryPlans() {
 
   const plans = [
     {
-      title: 'ЗДОБУВАЧ ОСВІТИ "ПРОАКТИВНИЙ" (1-4 клас)',
+      title: 'ЗДОБУВАЧ ОСВІТИ «ПРОАКТИВНИЙ» 1-4 клас)',
       old_price_month: "3000",
       price_month: "1500",
       old_price_year: "30000",
