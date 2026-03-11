@@ -255,11 +255,13 @@ function PrimaryPlans() {
           </div>
 
           {/* Additional info */}
-          <div className="mt-12 text-center">
+         <div className="mt-12 text-center">
             <p className="text-gray-600 text-sm md:text-base">
-              💡 Всі ціни вказані з урахуванням знижки. Детальну інформацію уточнюйте при оформленні заявки.
-            </p>
-          </div>
+  Для уточнення детальної інформації телефонуйте:{" "}
+  <a href="tel:+380980230330" className="font-semibold hover:underline">
+    098 023 03 30
+  </a>
+</p>
         </div>
       </section>
 
