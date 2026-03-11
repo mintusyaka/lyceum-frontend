@@ -21,7 +21,7 @@
 
 // // //               <div className="ml-4 pt-10">
 // // //                 <h1 className="md:text-6xl sm:text-sm bg-linear-to-bl from-green-500 to-emerald-500 bg-clip-text text-transparent font-bold hover:animate-glow hover:text-white transition-colors duration-500">ЛІЦЕЙ </h1>
-// // //                 <strong className="bg-linear-to-bl from-green-500 to-emerald-500 bg-clip-text text-transparent font-bold hover:animate-glow hover:text-white transition-colors duration-500">ПРОАКТИВНІСТЬ</strong>
+// // //                 <strong className="bg-linear-to-bl from-green-500 to-emerald-500 bg-clip-text text-transparent font-bold hover:animate-glow hover:text-white transition-colors duration-500">«ПРОАКТИВНІСТЬ»</strong>
 // // //               </div>
 
 // // //               <div className='pt-10'>
@@ -91,7 +91,7 @@
 // // //               ЛІЦЕЙ 
 // // //             </h1>
 // // //             <strong className="bg-gradient-to-bl from-green-500 to-emerald-500 bg-clip-text text-transparent font-bold hover:text-white transition-colors duration-500">
-// // //               "ПРОАКТИВНІСТЬ"
+// // //               «ПРОАКТИВНІСТЬ»
 // // //             </strong>
 // // //           </div>
           
@@ -208,7 +208,7 @@
 // //               ЛІЦЕЙ 
 // //             </h1>
 // //             <strong className="bg-gradient-to-bl from-green-500 to-emerald-500 bg-clip-text text-transparent font-bold hover:text-white transition-colors duration-500">
-// //               "ПРОАКТИВНІСТЬ"
+// //               «ПРОАКТИВНІСТЬ»
 // //             </strong>
 // //           </div>
           
@@ -323,7 +323,7 @@
 // //             <div className="absolute bottom-8 left-6 right-6">
 // //               <div className="text-center p-4 border-t border-gray-700">
 // //                 <p className="text-emerald-500 text-sm">
-// //                   ЛІЦЕЙ "ПРОАКТИВНІСТЬ"
+// //                   ЛІЦЕЙ «ПРОАКТИВНІСТЬ»
 // //                 </p>
 // //                 <p className="text-gray-300 text-xs mt-1">
 // //                   Розвиваємо майбутнє разом
@@ -388,7 +388,7 @@
 //                 ДИСТАНЦІЙНИЙ ЛІЦЕЙ
 //               </strong>
 //               <h1 className="md:text-6xl sm:text-sm bg-gradient-to-bl from-green-500 to-emerald-500 bg-clip-text text-transparent font-bold hover:text-white transition-colors duration-500">
-//                 "ПРОАКТИВНІСТЬ" 
+//                 «ПРОАКТИВНІСТЬ» 
 //               </h1>
               
 //             </div>
@@ -467,7 +467,7 @@
 //             <div className="absolute bottom-8 left-6 right-6">
 //               <div className="text-center p-4 border-t border-gray-700">
 //                 <p className="text-gray-400 text-sm">
-//                   ЛІЦЕЙ "ПРОАКТИВНІСТЬ"
+//                   ЛІЦЕЙ «ПРОАКТИВНІСТЬ»
 //                 </p>
 //                 <p className="text-emerald-400 text-xs mt-1">
 //                   Розвиваємо майбутнє разом
