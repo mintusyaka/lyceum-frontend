@@ -34,13 +34,19 @@ function PricesSection() {
                 features: ["Підготовка до ЗНО", "Університетські курси", "Індивідуальні консультації", "Стажування"]
               }
             ].map((plan, index) => (
-              <div key={index} className={`bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-shadow relative ${plan.popular ? 'ring-2 ring-emerald-500' : ''}`}>
-                {plan.popular && (
-                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                    <span className="bg-gradient-to-r from-green-500 to-emerald-500 text-white px-4 py-2 rounded-full text-sm font-medium">
-                      Популярний
-                    </span>
-                  </div>
+  <div
+    key={index}
+    className={`bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-shadow relative ${
+      plan.popular ? 'ring-2 ring-violet-500' : ''
+    }`}
+  >
+    {plan.popular && (
+      <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+        <span className="bg-gradient-to-r from-violet-500 to-blue-500 text-white px-4 py-2 rounded-full text-sm font-medium shadow-md">
+          Популярний
+        </span>
+      </div>
+    )}
                 )}
                 <div className="text-center mb-6">
                   <h4 className="text-xl font-semibold text-gray-900 mb-2">{plan.title}</h4>
