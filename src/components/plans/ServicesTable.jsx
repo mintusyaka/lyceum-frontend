@@ -22,7 +22,7 @@ const services = [
     stars: [true, true, true, true],
   },
   {
-    name: 'ДПА в дистанційній формі, а ЗНО/НМТ за місцем проживання',
+    name: 'ДПА в дистанційній формі, а НМТ за місцем проживання',
     stars: [true, true, true, true],
   },
   {
@@ -58,7 +58,7 @@ const services = [
     stars: [true, true, true, true],
   },
   {
-    name: 'Повна перевірка (письмових) робіт',
+    name: 'Повна перевірка письмових робіт',
     stars: [true, true, true, true],
   },
   {
@@ -66,7 +66,7 @@ const services = [
     stars: [true, true, true, true],
   },
   {
-    name: 'Онлайн-уроки (для 1-11 класів)',
+    name: 'Онлайн-уроки для 1-11 класів',
     stars: [true, false, false, true],
   },
   {
@@ -86,7 +86,7 @@ const services = [
     stars: [true, true, true, true],
   },
   {
-    name: 'Підготовка до ДПА/НМТ/ЗНО',
+    name: 'Підготовка до ДПА та НМТ',
     stars: [true, true, true, true],
   },
   {
