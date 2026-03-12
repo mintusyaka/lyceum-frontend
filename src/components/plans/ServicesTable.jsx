@@ -89,10 +89,6 @@ const services = [
     name: 'Підготовка до ДПА та НМТ',
     stars: [true, true, true, true],
   },
-  {
-    name: 'Вартість',
-    stars: [5200 , 6500 , 15 900 ,  99 ],
-  },
 ];
 
 const getHeaderBgClass = (index) => {
