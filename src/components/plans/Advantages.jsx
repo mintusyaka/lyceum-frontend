@@ -210,7 +210,6 @@ function Advantages() {
             </div>
           </div>
           <span className="mt-5 inline-block bg-gradient-to-r from-yellow-400 to-orange-400 text-white px-3 py-1 rounded-full text-sm sm:text-base font-bold animate-pulse">
-            P.S. У нас зараз знижки!
           </span>
         </div>
       </div>
