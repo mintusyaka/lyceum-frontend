@@ -1,617 +1,199 @@
-// // // import './Header.css';
-
-// // // import { Link } from 'react-router-dom';
-// // // import { Menu } from 'lucide-react';
-// // // import { GraduationCap } from 'lucide-react';
-
-// // // import Logo from '../../../assets/lyceum-logo.png'
-
-// // // function Header() {
-// // //   return (
-    
-// // //     <header className="bg-gray-900 shadow-lg">
-// // //         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-// // //           {/* <div className="flex justify-between items-center py-6"> */}
-// // //             <div className="flex justify-between items-center pb-10">
-
-// // //               {/* <img src={Logo} alt="Logo" className="pt-5 inline-block w-50" /> */}
-// // //               <div className='pt-10'>
-// // //                 <GraduationCap className="w-12 h-12 text-gray-300 transition-colors duration-500 hover:text-white" /> 
-// // //               </div>  
-
-// // //               <div className="ml-4 pt-10">
-// // //                 <h1 className="md:text-6xl sm:text-sm bg-linear-to-bl from-green-500 to-emerald-500 bg-clip-text text-transparent font-bold hover:animate-glow hover:text-white transition-colors duration-500">ЛІЦЕЙ </h1>
-// // //                 <strong className="bg-linear-to-bl from-green-500 to-emerald-500 bg-clip-text text-transparent font-bold hover:animate-glow hover:text-white transition-colors duration-500">«ПРОАКТИВНІСТЬ»</strong>
-// // //               </div>
-
-// // //               <div className='pt-10'>
-// // //                 <Menu className="w-12 h-12 text-gray-300 transition-colors duration-500 hover:text-white" /> 
-// // //               </div>
-
-
-// // //             </div>
-// // //             {/* <nav className="hidden md:flex space-x-8">
-// // //               <a href="#about" className="text-gray-700 hover:text-blue-600 transition-colors">Про нас</a>
-// // //               <a href="#programs" className="text-gray-700 hover:text-blue-600 transition-colors">Програми</a>
-// // //               <a href="#prices" className="text-gray-700 hover:text-blue-600 transition-colors">Вартість</a>
-// // //               <a href="#contact" className="text-gray-700 hover:text-blue-600 transition-colors">Контакти</a>
-// // //             </nav> */}
-// // //           {/* </div> */}
-// // //         </div>
-// // //       </header>
-
-// // //   );
-// // // }
-
-// // // export default Header;
-
-// // // import './Header.css';
-// // // import { Link } from 'react-router-dom';
-// // // import { Menu, X } from 'lucide-react';
-// // // import { GraduationCap } from 'lucide-react';
-// // // import { useState, useRef, useEffect } from 'react';
-// // // import Logo from '../../../assets/lyceum-logo.png'
-
-// // // function Header() {
-// // //   const [isMenuOpen, setIsMenuOpen] = useState(false);
-// // //   const menuRef = useRef(null);
-
-// // //   // Close menu when clicking outside
-// // //   useEffect(() => {
-// // //     const handleClickOutside = (event) => {
-// // //       if (menuRef.current && !menuRef.current.contains(event.target)) {
-// // //         setIsMenuOpen(false);
-// // //       }
-// // //     };
-
-// // //     document.addEventListener('mousedown', handleClickOutside);
-// // //     return () => {
-// // //       document.removeEventListener('mousedown', handleClickOutside);
-// // //     };
-// // //   }, []);
-
-// // //   const toggleMenu = () => {
-// // //     setIsMenuOpen(!isMenuOpen);
-// // //   };
-
-// // //   const closeMenu = () => {
-// // //     setIsMenuOpen(false);
-// // //   };
-
-// // //   return (
-// // //     <header className="bg-gray-900 shadow-lg relative z-50">
-// // //       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-// // //         <div className="flex justify-between items-center pb-10">
-// // //           <div className='pt-10'>
-// // //             <GraduationCap className="w-12 h-12 text-gray-300 transition-colors duration-500 hover:text-white" />
-// // //           </div>  
-          
-// // //           <div className="ml-4 pt-10">
-// // //             <h1 className="md:text-6xl sm:text-sm bg-gradient-to-bl from-green-500 to-emerald-500 bg-clip-text text-transparent font-bold hover:text-white transition-colors duration-500">
-// // //               ЛІЦЕЙ 
-// // //             </h1>
-// // //             <strong className="bg-gradient-to-bl from-green-500 to-emerald-500 bg-clip-text text-transparent font-bold hover:text-white transition-colors duration-500">
-// // //               «ПРОАКТИВНІСТЬ»
-// // //             </strong>
-// // //           </div>
-          
-// // //           <div className='pt-10 relative' ref={menuRef}>
-// // //             {/* <button
-// // //               onClick={toggleMenu}
-// // //               className="w-12 h-12 flex items-center justify-center bg-white rounded-lg shadow-md hover:shadow-lg transition"
-// // //               aria-label="Toggle menu"
-// // //             >
-// // //               {isMenuOpen ? (
-// // //                 <X className="w-12 h-12 text-gray-800 transform rotate-180 transition-transform duration-300" />
-// // //               ) : (
-// // //                 <Menu className="w-full h-full text-gray-800" strokeWidth={2.5} />
-// // //               )}
-// // //             </button> */}
-
-// // //             <Menu
-// // //               onClick={toggleMenu}
-// // //               className="w-12 h-12 text-gray-300 cursor-pointer hover:text-white transition-colors duration-300"
-// // //               strokeWidth={2.5}
-// // //             />
-
-
-            
-// // //             {/* Dropdown Menu */}
-// // //             {isMenuOpen && (
-// // //               <div className="absolute right-0 mt-3 w-64 bg-white rounded-xl shadow-2xl border border-gray-700 transition-all duration-300 ease-out transform origin-top-right opacity-100 scale-100 translate-y-0 z-50">
-// // //               <div className="py-2">
-// // //                 <Link
-// // //                   to="/prices"
-// // //                   onClick={closeMenu}
-// // //                   className="block px-6 py-3 text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-emerald-600 hover:to-green-600 transition-all duration-200 text-lg font-medium border-b border-gray-700 last:border-b-0"
-// // //                 >
-// // //                   <p className='text-gray-900'>💰 Вартість </p>
-// // //                 </Link>
-                
-// // //                 <Link
-// // //                   to="/study-plans"
-// // //                   onClick={closeMenu}
-// // //                   className="block px-6 py-3 text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-emerald-600 hover:to-green-600 transition-all duration-200 text-lg font-medium border-b border-gray-700 last:border-b-0"
-// // //                 >
-// // //                   <p className='text-gray-900'>📚 Навчальні плани</p>
-// // //                 </Link>
-                
-// // //                 <Link
-// // //                   to="/about"
-// // //                   onClick={closeMenu}
-// // //                   className="block px-6 py-3 text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-emerald-600 hover:to-green-600 transition-all duration-200 text-lg font-medium border-b border-gray-700 last:border-b-0"
-// // //                 >
-// // //                   <p className='text-gray-900'>ℹ️ Про нас</p>
-// // //                 </Link>
-                
-// // //                 <Link
-// // //                   to="/contacts"
-// // //                   onClick={closeMenu}
-// // //                   className="block px-6 py-3 text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-emerald-600 hover:to-green-600 transition-all duration-200 text-lg font-medium"
-// // //                 >
-// // //                   <p className='text-gray-900'>📞 Контакти</p>
-// // //                 </Link>
-// // //                               </div>
-// // //               </div>
-// // //             )}
-// // //           </div>
-// // //         </div>
-// // //       </div>
-// // //     </header>
-// // //   );
-// // // }
-
-// // // export default Header;
-
-// // import './Header.css';
-// // import { Link } from 'react-router-dom';
-// // import { Menu, X } from 'lucide-react';
-// // import { GraduationCap } from 'lucide-react';
-// // import { useState, useRef, useEffect } from 'react';
-
-// // function Header() {
-// //   const [isMenuOpen, setIsMenuOpen] = useState(false);
-// //   const menuRef = useRef(null);
-
-// //   // Close menu when clicking outside
-// //   useEffect(() => {
-// //     const handleClickOutside = (event) => {
-// //       if (menuRef.current && !menuRef.current.contains(event.target)) {
-// //         setIsMenuOpen(false);
-// //       }
-// //     };
-
-// //     document.addEventListener('mousedown', handleClickOutside);
-// //     return () => {
-// //       document.removeEventListener('mousedown', handleClickOutside);
-// //     };
-// //   }, []);
-
-// //   const toggleMenu = () => {
-// //     setIsMenuOpen(!isMenuOpen);
-// //   };
-
-// //   const closeMenu = () => {
-// //     setIsMenuOpen(false);
-// //   };
-
-// //   return (
-// //     <header className="bg-gray-900 shadow-lg relative z-50">
-// //       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-// //         <div className="flex justify-between items-center pb-10">
-// //           <div className='pt-10'>
-// //             <GraduationCap className="w-12 h-12 text-gray-300 transition-colors duration-500 hover:text-white" />
-// //           </div>  
-          
-// //           <div className="ml-4 pt-10">
-// //             <h1 className="md:text-6xl sm:text-sm bg-gradient-to-bl from-green-500 to-emerald-500 bg-clip-text text-transparent font-bold hover:text-white transition-colors duration-500">
-// //               ЛІЦЕЙ 
-// //             </h1>
-// //             <strong className="bg-gradient-to-bl from-green-500 to-emerald-500 bg-clip-text text-transparent font-bold hover:text-white transition-colors duration-500">
-// //               «ПРОАКТИВНІСТЬ»
-// //             </strong>
-// //           </div>
-          
-// //           <div className='pt-10 relative' ref={menuRef}>
-// //             <Menu
-// //               onClick={toggleMenu}
-// //               className="w-12 h-12 text-gray-300 cursor-pointer hover:text-white transition-colors duration-300"
-// //               strokeWidth={2.5}
-// //             />
-// //           </div>
-// //         </div>
-// //       </div>
-
-// //       {/* Full Screen Right Side Menu */}
-// //       {isMenuOpen && (
-// //         <div className="fixed top-0 right-0 h-full w-full sm:w-96 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 shadow-2xl z-50 transform translate-x-0 transition-transform duration-500 ease-out">
-// //             {/* Menu Header */}
-// //             <div className="flex items-center justify-between p-8 border-b border-gray-700">
-// //               <div className="flex items-center space-x-3">
-// //                 <GraduationCap className="w-8 h-8 text-gray-300" />
-// //                 <h2 className="text-2xl font-bold text-gray-300">
-// //                   Меню
-// //                 </h2>
-// //               </div>
-// //                 <X 
-// //                 className="w-6 h-6 text-gray-300"
-// //                 onClick={closeMenu}
-// //                 />
-// //             </div>
-            
-// //             {/* Menu Items */}
-// //             {/* <div className="py-8 px-6 space-y-2">
-// //               <Link
-// //                 to="/prices"
-// //                 onClick={closeMenu}
-// //                 className="flex items-center space-x-4 p-4 text-white hover:bg-gradient-to-r hover:from-emerald-600/20 hover:to-green-600/20 rounded-xl transition-all duration-300 text-xl font-medium group"
-// //               >
-// //                 <span className="text-2xl group-hover:scale-110 transition-transform duration-200">💰</span>
-// //                 <span className='text-white'>Вартість</span>
-// //               </Link>
-              
-// //               <Link
-// //                 to="/study-plans"
-// //                 onClick={closeMenu}
-// //                 className="flex items-center space-x-4 p-4 text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-emerald-600/20 hover:to-green-600/20 rounded-xl transition-all duration-300 text-xl font-medium group"
-// //               >
-// //                 <span className="text-2xl group-hover:scale-110 transition-transform duration-200">📚</span>
-// //                 <span className='text-white'>Навчальні плани</span>
-// //               </Link>
-              
-// //               <Link
-// //                 to="/about"
-// //                 onClick={closeMenu}
-// //                 className="flex items-center space-x-4 p-4 text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-emerald-600/20 hover:to-green-600/20 rounded-xl transition-all duration-300 text-xl font-medium group"
-// //               >
-// //                 <span className="text-2xl group-hover:scale-110 transition-transform duration-200">ℹ️</span>
-// //                 <span className='text-white'>Про нас</span>
-// //               </Link>
-              
-// //               <Link
-// //                 to="/contacts"
-// //                 onClick={closeMenu}
-// //                 className="flex items-center space-x-4 p-4 text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-emerald-600/20 hover:to-green-600/20 rounded-xl transition-all duration-300 text-xl font-medium group"
-// //               >
-// //                 <span className="text-2xl group-hover:scale-110 transition-transform duration-200">📞</span>
-// //                 <span className='text-white'>Контакти</span>
-// //               </Link>
-// //             </div> */}
-
-// //             <div className="py-8 px-6 space-y-2">
-// //               <Link
-// //                 to="/about"
-// //                 onClick={closeMenu}
-// //                 className="flex items-center space-x-4 p-4 text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-emerald-600/20 hover:to-green-600/20 rounded-xl transition-all duration-300 text-xl font-medium group"
-// //               >
-// //                 <span className="text-2xl group-hover:scale-110 transition-transform duration-200">💰</span>
-// //                 <span>Вартість</span>
-// //               </Link>
-              
-// //               <Link
-// //                 to="/about"
-// //                 onClick={closeMenu}
-// //                 className="flex items-center space-x-4 p-4 text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-emerald-600/20 hover:to-green-600/20 rounded-xl transition-all duration-300 text-xl font-medium group"
-// //               >
-// //                 <span className="text-2xl group-hover:scale-110 transition-transform duration-200">📚</span>
-// //                 <span>Навчальні плани</span>
-// //               </Link>
-              
-// //               <Link
-// //                 to="/about"
-// //                 onClick={closeMenu}
-// //                 className="flex items-center space-x-4 p-4 text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-emerald-600/20 hover:to-green-600/20 rounded-xl transition-all duration-300 text-xl font-medium group"
-// //               >
-// //                 <span className="text-2xl group-hover:scale-110 transition-transform duration-200">ℹ️</span>
-// //                 <span>Про нас</span>
-// //               </Link>
-              
-// //               <Link
-// //                 to="/about"
-// //                 onClick={() => {
-// //                   console.log('About link clicked!');
-// //                   closeMenu();
-// //                 }}
-// //                 className="flex items-center space-x-4 p-4 text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-emerald-600/20 hover:to-green-600/20 rounded-xl transition-all duration-300 text-xl font-medium group"
-// //               >
-// //                 <span className="text-2xl group-hover:scale-110 transition-transform duration-200">📞</span>
-// //                 <span>Контакти</span>
-// //               </Link>
-// //             </div>
-            
-// //             {/* Menu Footer */}
-// //             <div className="absolute bottom-8 left-6 right-6">
-// //               <div className="text-center p-4 border-t border-gray-700">
-// //                 <p className="text-emerald-500 text-sm">
-// //                   ЛІЦЕЙ «ПРОАКТИВНІСТЬ»
-// //                 </p>
-// //                 <p className="text-gray-300 text-xs mt-1">
-// //                   Розвиваємо майбутнє разом
-// //                 </p>
-// //               </div>
-// //             </div>
-// //         </div>
-// //       )}
-// //     </header>
-// //   );
-// // }
-
-// // export default Header;
-
-// import './Header.css';
-// import { Link } from 'react-router-dom';
-// import { Menu, X } from 'lucide-react';
-// import { GraduationCap } from 'lucide-react';
-// import { useState, useRef, useEffect } from 'react';
-// import Logo from '../../../assets/lyceum-logo.png'
-
-// function Header() {
-//   const [isMenuOpen, setIsMenuOpen] = useState(false);
-//   const menuRef = useRef(null);
-//   const menuPanelRef = useRef(null);
-
-//   // Close menu when clicking outside
-//   useEffect(() => {
-//     const handleClickOutside = (event) => {
-//       if (menuRef.current && !menuRef.current.contains(event.target) && 
-//           menuPanelRef.current && !menuPanelRef.current.contains(event.target)) {
-//         setIsMenuOpen(false);
-//       }
-//     };
-
-//     document.addEventListener('mousedown', handleClickOutside);
-//     return () => {
-//       document.removeEventListener('mousedown', handleClickOutside);
-//     };
-//   }, []);
-
-//   const toggleMenu = () => {
-//     setIsMenuOpen(!isMenuOpen);
-//   };
-
-//   const closeMenu = () => {
-//     setIsMenuOpen(false);
-//   };
-
-//   return (
-//     <header className="bg-gray-900 shadow-lg relative z-50">
-//       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-//         <div className="flex justify-between items-center pb-10">
-//           <div className='pt-10'>
-//             <GraduationCap className="w-12 h-12 text-gray-300 transition-colors duration-500 hover:text-white" />
-//           </div>  
-          
-//           <Link 
-//             to="/">
-//             <div className="ml-4 pt-10">
-//               <strong className="bg-gradient-to-bl from-green-500 to-emerald-500 bg-clip-text text-transparent font-bold hover:text-white transition-colors duration-500">
-//                 ДИСТАНЦІЙНИЙ ЛІЦЕЙ
-//               </strong>
-//               <h1 className="md:text-6xl sm:text-sm bg-gradient-to-bl from-green-500 to-emerald-500 bg-clip-text text-transparent font-bold hover:text-white transition-colors duration-500">
-//                 «ПРОАКТИВНІСТЬ» 
-//               </h1>
-              
-//             </div>
-//           </Link>
-          
-//           <div className='pt-10 relative' ref={menuRef}>
-//             <Menu
-//               onClick={toggleMenu}
-//               className="w-12 h-12 text-gray-300 cursor-pointer hover:text-white transition-colors duration-300"
-//               strokeWidth={2.5}
-//             />
-//           </div>
-//         </div>
-//       </div>
-
-//       {/* Full Screen Right Side Menu */}
-//       {isMenuOpen && (
-//         <div ref={menuPanelRef} className="fixed top-0 right-0 h-full w-full sm:w-96 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 shadow-2xl z-50 transform translate-x-0 transition-transform duration-500 ease-out">
-//             {/* Menu Header */}
-//             <div className="flex items-center justify-between p-8 border-b border-gray-700">
-//               <div className="flex items-center space-x-3">
-//                 <GraduationCap className="w-8 h-8 text-gray-300" />
-//               <h2 className="text-2xl font-bold text-gray-300">
-//                 Меню
-//               </h2>
-//               </div>
-//               <X 
-//                 className="w-6 h-6 text-gray-300"
-//                 onClick={closeMenu}
-//               />
-//             </div>
-            
-//             {/* Menu Items */}
-//             <div className="py-8 px-6 space-y-2">
-//               <Link
-//                 to="/prices"
-//                 onClick={closeMenu}
-//                 className="flex items-center space-x-4 p-4 text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-emerald-600/20 hover:to-green-600/20 rounded-xl transition-all duration-300 text-xl font-medium group"
-//               >
-//                 <span className="text-2xl group-hover:scale-110 transition-transform duration-200">💰</span>
-//                 <span className="text-white">Вартість</span>
-//               </Link>
-              
-//               <Link
-//                 to="/curriculums"
-//                 onClick={closeMenu}
-//                 className="flex items-center space-x-4 p-4 text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-emerald-600/20 hover:to-green-600/20 rounded-xl transition-all duration-300 text-xl font-medium group"
-//               >
-//                 <span className="text-2xl group-hover:scale-110 transition-transform duration-200">📚</span>
-//                 <span className="text-white">Навчальні плани</span>
-//               </Link>
-              
-//               <Link
-//                 to="/about"
-//                 onClick={() => {
-//                   console.log('About link clicked!');
-//                   closeMenu();
-//                 }}
-//                 className="flex items-center space-x-4 p-4 text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-emerald-600/20 hover:to-green-600/20 rounded-xl transition-all duration-300 text-xl font-medium group"
-//               >
-//                 <span className="text-2xl group-hover:scale-110 transition-transform duration-200">ℹ️</span>
-//                 <span className="text-white">Про нас</span>
-//               </Link>
-              
-//               <Link
-//                 to="/contacts"
-//                 onClick={closeMenu}
-//                 className="flex items-center space-x-4 p-4 text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-emerald-600/20 hover:to-green-600/20 rounded-xl transition-all duration-300 text-xl font-medium group"
-//               >
-//                 <span className="text-2xl group-hover:scale-110 transition-transform duration-200">📞</span>
-//                 <span className="text-white">Контакти</span>
-//               </Link>
-//             </div>
-            
-//             {/* Menu Footer */}
-//             <div className="absolute bottom-8 left-6 right-6">
-//               <div className="text-center p-4 border-t border-gray-700">
-//                 <p className="text-gray-400 text-sm">
-//                   ЛІЦЕЙ «ПРОАКТИВНІСТЬ»
-//                 </p>
-//                 <p className="text-emerald-400 text-xs mt-1">
-//                   Розвиваємо майбутнє разом
-//                 </p>
-//               </div>
-//             </div>
-//         </div>
-//       )}
-//     </header>
-//   );
-// }
-
-// export default Header;
-
 import './Header.css';
 import { Link } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
-import { GraduationCap } from 'lucide-react';
+import { Menu, X, ArrowUpRight } from 'lucide-react';
 import { useState, useRef, useEffect } from 'react';
-import Logo from '../../../assets/lyceum-logo.png'
+import Logo from '../../../assets/lyceum-logo.png';
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const menuRef = useRef(null);
+  const menuButtonRef = useRef(null);
   const menuPanelRef = useRef(null);
 
-  // Close menu when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (menuRef.current && !menuRef.current.contains(event.target) && 
-          menuPanelRef.current && !menuPanelRef.current.contains(event.target)) {
+      if (
+        menuButtonRef.current &&
+        !menuButtonRef.current.contains(event.target) &&
+        menuPanelRef.current &&
+        !menuPanelRef.current.contains(event.target)
+      ) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    const handleEscape = (event) => {
+      if (event.key === 'Escape') {
         setIsMenuOpen(false);
       }
     };
 
     document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('keydown', handleEscape);
+
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('keydown', handleEscape);
+      document.body.style.overflow = '';
     };
-  }, []);
+  }, [isMenuOpen]);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const closeMenu = () => setIsMenuOpen(false);
+  const toggleMenu = () => setIsMenuOpen((prev) => !prev);
 
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-  };
+  const navItems = [
+    { label: 'Програми', to: '/plans' },
+    { label: 'Про ліцей', to: '/about' },
+    { label: 'Контакти', to: '/contacts' }
+  ];
 
   return (
-    <header className="bg-gray-900 shadow-lg relative z-50">
-      <div className="max-w-7xl mx-auto px-1 sm:px-2 md:px-4 lg:px-8">
-        <div className="flex justify-between items-center pb-4 sm:pb-6 lg:pb-8 xl:pb-10">
-          <div className='pt-4 sm:pt-6 lg:pt-8 xl:pt-10'>
-            <GraduationCap className="w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-gray-300 transition-colors duration-500 hover:text-white" />
-          </div>  
-          
-          <Link 
-            to="/"
-            className="flex-1 text-center mx-1 sm:mx-2 lg:mx-4 min-w-0">
-            <div className="pt-4 sm:pt-6 lg:pt-8 xl:pt-10">
-              <strong className="block text-xs sm:text-sm lg:text-base bg-gradient-to-bl from-green-500 to-emerald-500 bg-clip-text text-transparent font-bold hover:text-white transition-colors duration-500 whitespace-nowrap">
-                ДИСТАНЦІЙНИЙ ЛІЦЕЙ
-              </strong>
-              <h1 className="bg-gradient-to-bl from-green-500 to-emerald-500 bg-clip-text text-transparent font-bold hover:text-white transition-colors duration-500 leading-tight whitespace-nowrap" style={{fontSize: 'clamp(1.25rem, 8vw, 4rem)'}}>
-                «ПРОАКТИВНІСТЬ» 
-              </h1>
+    <>
+      <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 backdrop-blur-xl shadow-sm">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between gap-4 py-4 lg:py-5">
+            {/* LEFT: Logo + Brand */}
+            <Link to="/" className="flex items-center gap-3 sm:gap-4 min-w-0 group">
+              <div className="flex h-14 w-14 sm:h-16 sm:w-16 items-center justify-center rounded-2xl bg-white shadow-md ring-1 ring-slate-200 overflow-hidden flex-shrink-0">
+                <img
+                  src={Logo}
+                  alt="Логотип ліцею Проактивність"
+                  className="h-10 w-10 sm:h-12 sm:w-12 object-contain"
+                />
+              </div>
+
+              <div className="min-w-0">
+                <div className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-[11px] sm:text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1.5">
+                  Дистанційний ліцей
+                </div>
+
+                <div className="text-xl sm:text-2xl lg:text-3xl font-bold leading-tight text-slate-900 tracking-tight group-hover:text-emerald-700 transition-colors">
+                  «Проактивність»
+                </div>
+
+                <div className="hidden sm:block text-sm text-slate-500 leading-5">
+                  Сучасна освіта для майбутнього
+                </div>
+              </div>
+            </Link>
+
+            {/* DESKTOP NAV */}
+            <nav className="hidden lg:flex items-center gap-2">
+              {navItems.map((item) => (
+                <Link
+                  key={item.to}
+                  to={item.to}
+                  className="rounded-xl px-4 py-2.5 text-sm font-medium text-slate-700 transition-all hover:bg-slate-100 hover:text-emerald-700"
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </nav>
+
+            {/* RIGHT ACTIONS */}
+            <div className="flex items-center gap-3">
+              <Link
+                to="/contacts"
+                className="hidden md:inline-flex items-center gap-2 rounded-xl bg-emerald-700 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-emerald-100 transition-all duration-300 hover:bg-emerald-800 hover:-translate-y-0.5"
+              >
+                Подати заявку
+                <ArrowUpRight className="w-4 h-4" />
+              </Link>
+
+              <button
+                ref={menuButtonRef}
+                onClick={toggleMenu}
+                className="inline-flex lg:hidden items-center justify-center rounded-xl border border-slate-200 bg-white p-3 text-slate-700 shadow-sm transition-all hover:bg-slate-50 hover:text-emerald-700"
+                aria-label="Відкрити меню"
+                aria-expanded={isMenuOpen}
+              >
+                {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              </button>
             </div>
-          </Link>
-          
-          <div className='pt-4 sm:pt-6 lg:pt-8 xl:pt-10 relative' ref={menuRef}>
-            <Menu
-              onClick={toggleMenu}
-              className="w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-gray-300 cursor-pointer hover:text-white transition-colors duration-300"
-              strokeWidth={2.5}
-            />
           </div>
         </div>
-      </div>
+      </header>
 
-      {/* Full Screen Right Side Menu */}
+      {/* MOBILE MENU OVERLAY */}
       {isMenuOpen && (
-        <div ref={menuPanelRef} className="fixed top-0 right-0 h-full w-full sm:w-80 md:w-96 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 shadow-2xl z-50 transform translate-x-0 transition-transform duration-500 ease-out">
-            {/* Menu Header */}
-            <div className="flex items-center justify-between p-4 sm:p-6 lg:p-8 border-b border-gray-700">
-              <div className="flex items-center space-x-3">
-                <GraduationCap className="w-6 h-6 sm:w-8 sm:h-8 text-gray-300" />
-                <h2 className="text-xl sm:text-2xl font-bold text-gray-300">
-                  Меню
-                </h2>
+        <div className="fixed inset-0 z-[60] lg:hidden">
+          <div className="absolute inset-0 bg-slate-950/45 backdrop-blur-sm" />
+
+          <div
+            ref={menuPanelRef}
+            className="absolute right-0 top-0 h-full w-full max-w-sm bg-white shadow-2xl"
+          >
+            <div className="flex items-center justify-between border-b border-slate-200 px-5 py-5">
+              <div className="flex items-center gap-3 min-w-0">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white shadow-sm ring-1 ring-slate-200 overflow-hidden flex-shrink-0">
+                  <img
+                    src={Logo}
+                    alt="Логотип ліцею Проактивність"
+                    className="h-9 w-9 object-contain"
+                  />
+                </div>
+
+                <div className="min-w-0">
+                  <div className="text-xs font-semibold uppercase tracking-wide text-emerald-700">
+                    Дистанційний ліцей
+                  </div>
+                  <div className="text-lg font-bold text-slate-900 leading-tight">
+                    «Проактивність»
+                  </div>
+                </div>
               </div>
-              <X 
-                className="w-6 h-6 text-gray-300 cursor-pointer hover:text-white transition-colors"
+
+              <button
                 onClick={closeMenu}
-              />
+                className="rounded-xl border border-slate-200 bg-white p-2.5 text-slate-700"
+                aria-label="Закрити меню"
+              >
+                <X className="w-5 h-5" />
+              </button>
             </div>
-            
-            {/* Menu Items */}
-            <div className="py-4 sm:py-6 lg:py-8 px-4 sm:px-6 space-y-2">
-              <Link
-                to="/plans"
-                onClick={closeMenu}
-                className="flex items-center space-x-3 sm:space-x-4 p-3 sm:p-4 text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-emerald-600/20 hover:to-green-600/20 rounded-xl transition-all duration-300 text-lg sm:text-xl font-medium group"
-              >
-                <span className="text-xl sm:text-2xl group-hover:scale-110 transition-transform duration-200">📚</span>
-                <span className="text-white">Навчальні плани</span>
-              </Link>
-              
-              <Link
-                to="/about"
-                onClick={() => {
-                  console.log('About link clicked!');
-                  closeMenu();
-                }}
-                className="flex items-center space-x-3 sm:space-x-4 p-3 sm:p-4 text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-emerald-600/20 hover:to-green-600/20 rounded-xl transition-all duration-300 text-lg sm:text-xl font-medium group"
-              >
-                <span className="text-xl sm:text-2xl group-hover:scale-110 transition-transform duration-200">ℹ️</span>
-                <span className="text-white">Про нас</span>
-              </Link>
-              
+
+            <div className="px-5 py-6">
+              <div className="space-y-2">
+                {navItems.map((item) => (
+                  <Link
+                    key={item.to}
+                    to={item.to}
+                    onClick={closeMenu}
+                    className="flex items-center justify-between rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-base font-semibold text-slate-800 transition-all hover:border-emerald-200 hover:bg-emerald-50 hover:text-emerald-700"
+                  >
+                    {item.label}
+                    <ArrowUpRight className="w-4 h-4" />
+                  </Link>
+                ))}
+              </div>
+
               <Link
                 to="/contacts"
                 onClick={closeMenu}
-                className="flex items-center space-x-3 sm:space-x-4 p-3 sm:p-4 text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-emerald-600/20 hover:to-green-600/20 rounded-xl transition-all duration-300 text-lg sm:text-xl font-medium group"
+                className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-emerald-700 px-5 py-4 text-base font-semibold text-white shadow-lg shadow-emerald-100 transition-all hover:bg-emerald-800"
               >
-                <span className="text-xl sm:text-2xl group-hover:scale-110 transition-transform duration-200">📞</span>
-                <span className="text-white">Контакти</span>
+                Подати заявку
+                <ArrowUpRight className="w-5 h-5" />
               </Link>
-            </div>
-            
-            {/* Menu Footer */}
-            <div className="absolute bottom-4 sm:bottom-6 lg:bottom-8 left-4 sm:left-6 right-4 sm:right-6">
-              <div className="text-center p-3 sm:p-4 border-t border-gray-700">
-                <p className="text-gray-400 text-sm">
-                  ЛІЦЕЙ «ПРОАКТИВНІСТЬ»
-                </p>
-                <p className="text-emerald-400 text-xs mt-1">
-                  Розвиваємо майбутнє разом
+
+              <div className="mt-8 rounded-2xl bg-slate-50 p-4 ring-1 ring-slate-200">
+                <div className="text-sm font-semibold text-slate-900 mb-1">
+                  Сучасна освіта для майбутнього
+                </div>
+                <p className="text-sm leading-6 text-slate-600">
+                  Гнучкий формат навчання, підтримка батьків і фокус на реальному розвитку дитини.
                 </p>
               </div>
             </div>
+          </div>
         </div>
       )}
-    </header>
+    </>
   );
 }
 
