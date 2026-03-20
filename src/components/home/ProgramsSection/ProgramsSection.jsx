@@ -33,7 +33,7 @@ function ProgramsSection() {
                 path:"middle-school"
               },
               {
-                title: "Старша школа 10-11 класи",
+                title: "Старша профільна школа 10-11 (12) класи",
                 features: ["Профільна освіта", "Підготовка до НМТ", "Університетські курси", "Стажування"],
                 highlight: "from-blue-500 to-cyan-500",
                 icon: Graduated,
