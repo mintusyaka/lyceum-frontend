@@ -41,7 +41,7 @@ function HeroSection() {
 
               <a
                 href="#programs"
-                className="inline-flex items-center justify-center rounded-xl border border-gray-300 bg-white px-7 py-4 text-gray-900 font-semibold transition-all duration-300 hover:border-emerald-400 hover:text-emerald-700 hover:shadow-md"
+                className="inline-flex items-center justify-center rounded-xl border border-gray-300 bg-white px-7 py-4 text-white-900 font-bold transition-all duration-300 hover:border-emerald-400 hover:text-emerald-700 hover:shadow-md"
               >
                 Переглянути програми
               </a>
