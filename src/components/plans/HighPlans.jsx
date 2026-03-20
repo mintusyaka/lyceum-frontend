@@ -59,30 +59,30 @@ function HighPlans() {
   const plans = [
     {
       title: 'ЗДОБУВАЧ ОСВІТИ "ПРОАКТИВНИЙ" (10-11 клас)',
-      old_price_month: "4000",
-      price_month: "2000",
-      old_price_year: "40000",
-      price_year: "20000",
+      old_price_month: "",
+      price_month: "4000",
+      old_price_year: "",
+      price_year: "40000",
       features: ["Малі класи (до 15 учнів)", "Профорієнтація", "Підготовка до ЗНО/НМТ", "Індивідуальні консультації", "Університетська підготовка"],
       bg_color: "bg-gradient-to-br from-emerald-400 to-green-400",
       accent_color: "from-blue-500 to-cyan-500"
     },
     {
       title: 'ЕКСТЕРНАТ (10-11 клас)',
-      old_price_month: "4000",
-      price_month: "2000",
-      old_price_year: "40000",
-      price_year: "20000",
+      old_price_month: "",
+      price_month: "4000",
+      old_price_year: "",
+      price_year: "40000",
       features: ["Повний доступ до освітнього процесу", "Комбіновані уроки з елементами анімації та мультиплікації, навчальні ігри та моделі 3D", "Постійний зв'язок із класним керівником", "ДПА в дистанційній формі, а ЗНО/НМТ за місцем проживання", "Повна перевірка робіт", "Державний документ про освіту"],
       bg_color: "bg-gradient-to-br from-emerald-400 to-cyan-400",
       accent_color: "from-blue-500 to-cyan-500"
     },
     {
       title: 'СІМЕЙНЕ НАВЧАННЯ (10-11 клас)',
-      old_price_month: "1000",
-      price_month: "500",
-      old_price_year: "10000",
-      price_year: "5000",
+      old_price_month: "",
+      price_month: "1000",
+      old_price_year: "",
+      price_year: "10000",
       features: ["Зв'язок з класним керівником", "Письмові та усні завдання від учителів", "Атестація знань", "Індивідуальні консультації", "Перегляд записів онлайн уроків", "Свідоцтво досягнень/табель", "Документ про освіту"],
       bg_color: "bg-gradient-to-br from-cyan-400 to-blue-400",
       accent_color: "from-cyan-500 to-emerald-500",
@@ -90,10 +90,10 @@ function HighPlans() {
     },
     {
       title: 'УКРАЇНОЗНАВЧИЙ КОМПОНЕНТ (10-11 клас)',
-      old_price_month: "1800",
-      price_month: "900",
-      old_price_year: "18000",
-      price_year: "9000",
+      old_price_month: "",
+      price_month: "1800",
+      old_price_year: "",
+      price_year: "18000",
       features: ["Державний документ про освіту", "Доступ до предметів українознавчого компоненту + 2 навчальних предмета", "Перезарахування оцінок з іноземної школи", "Допоміжні матеріали: відео, аудіо, 3D-моделі", "Автоматизована перевірка робіт", "НМТ у місті проживання", "Додаткові сервіси"],
       bg_color: "bg-gradient-to-br from-cyan-400 to-blue-400",
       accent_color: "from-cyan-500 to-emerald-500",
@@ -192,7 +192,7 @@ function HighPlans() {
                 {plan.popular && (
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
                     <div className="bg-gradient-to-r from-blue-400 to-cyan-400 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
-                      ⭐ Популярний
+                      ⭐ Популярний ⭐
                     </div>
                   </div>
                 )}
@@ -217,7 +217,7 @@ function HighPlans() {
                           {isYearly ? plan.old_price_year : plan.old_price_month}
                         </span>
                         <span className="text-sm text-gray-500">
-                          {isYearly ? 'грн/рік' : 'грн/місяць'}
+                          {isYearly ? '' : ''}
                         </span>
                       </div>
 
