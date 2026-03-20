@@ -208,7 +208,7 @@ function PrimaryPlans() {
                           {isYearly ? plan.old_price_year : plan.old_price_month}
                         </span>
                         <span className="text-sm text-gray-500">
-                          {isYearly ? 'грн/рік' : 'грн/місяць'}
+                          {isYearly ? '' : ''}
                         </span>
                       </div>
 
