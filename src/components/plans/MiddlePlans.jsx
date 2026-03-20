@@ -59,10 +59,10 @@ function MiddlePlans() {
   const plans = [
     {
       title: 'ЗДОБУВАЧ ОСВІТИ "ПРОАКТИВНИЙ" (5-9 клас)',
-      old_price_month: "3400",
-      price_month: "1800",
-      old_price_year: "34000",
-      price_year: "18000",
+      old_price_month: "",
+      price_month: "3400",
+      old_price_year: "",
+      price_year: "34000",
       features: ["Малі класи (до 15 учнів)", "Профорієнтація", "Індивідуальні консультації", "Розвиток особистості", "НУШ для 5-8 класів", "Підготовка до ДПА"],
       bg_color: "bg-gradient-to-br from-emerald-400 via-green-400 to-emerald-400",
       accent_color: "from-emerald-500 to-blue-500",
@@ -70,20 +70,20 @@ function MiddlePlans() {
     },
     {
       title: 'ЕКСТЕРНАТ (5-9 клас)',
-      old_price_month: "3400",
-      price_month: "1800",
-      old_price_year: "34000",
-      price_year: "18000",
+      old_price_month: "",
+      price_month: "3400",
+      old_price_year: "",
+      price_year: "34000",
       features: ["Повний доступ до освітнього процесу", "Комбіновані уроки з елементами анімації та мультиплікації, навчальні ігри та моделі 3D", "Постійний зв'язок із класним керівником", "ДПА в дистанційній формі", "Державний документ про освіту"],
       bg_color: "bg-gradient-to-br from-cyan-400 via-emerald-400 to-cyan-400",
       accent_color: "from-emerald-500 to-blue-500",
     },
     {
       title: 'СІМЕЙНЕ НАВЧАННЯ (5-9 клас)',
-      old_price_month: "1400",
-      price_month: "700",
-      old_price_year: "14000",
-      price_year: "7000",
+      old_price_month: "",
+      price_month: "1400",
+      old_price_year: "",
+      price_year: "14000",
       features: ["Письмові та усні завдання з перевіркою від учителів", "Письмовий чат і консультації онлайн з учителями ", "Звязок із класним керівником", "Інтерактивні платформи для вивчення іноземних мов(оплачуються додатково)", "Звіт про успішність", "Додатково можна отримати довідку про те, що дитина навчається дистанційно та виписку навчальних результатів", "Дистанційне проведення ДПА", "Документ про базову загальну середню освіту"],
       bg_color: "bg-gradient-to-br from-cyan-400 via-blue-400 to-cyan-400",
       accent_color: "from-emerald-500 to-blue-500",
@@ -91,10 +91,10 @@ function MiddlePlans() {
     },
     {
       title: 'УКРАЇНОЗНАВЧИЙ КОМПОНЕНТ (5-9 клас)',
-      old_price_month: "1500",
-      price_month: "750",
-      old_price_year: "15000",
-      price_year: "7500",
+      old_price_month: "",
+      price_month: "1500",
+      old_price_year: "",
+      price_year: "15000",
       features: ["Навчання для дітей з будь якого куточку світу", "Державний документ про освіту", "Доступ до предметів українознавчого компоненту + 2 навчальних предмета", "Перезарахування оцінок з іноземної школи", "Допоміжні матеріали: відео, аудіо, 3D-моделі", "Автоматизована перевірка робіт", "ДПА-онлайн у місті проживання", "Додаткові сервіси"],
       bg_color: "bg-gradient-to-br from-cyan-400 to-blue-400",
       accent_color: "from-cyan-500 to-emerald-500",
@@ -218,7 +218,7 @@ function MiddlePlans() {
                           {isYearly ? plan.old_price_year : plan.old_price_month}
                         </span>
                         <span className="text-sm text-gray-500">
-                          {isYearly ? 'грн/рік' : 'грн/місяць'}
+                          {isYearly ? '' : ''}
                         </span>
                       </div>
 
