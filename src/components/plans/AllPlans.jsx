@@ -58,7 +58,7 @@ function AllPlans() {
 
   const plans = [
     {
-      title: 'ЗДОБУВАЧ ОСВІТИ «ПРОАКТИВНИЙ»1- 4 клас',
+      title: 'ЗДОБУВАЧ ОСВІТИ «ПРОАКТИВІСТ» 1- 4 класи',
   
       price_month: "3000",
   
@@ -69,7 +69,7 @@ function AllPlans() {
       popular: true
     },
     {
-      title: 'ЗДОБУВАЧ ОСВІТИ «ПРОАКТИВНИЙ» 5-9 клас',
+      title: 'ЗДОБУВАЧ ОСВІТИ «ПРОАКТИВІСТ» 5-9 класи',
       old_price_month: "",
       price_month: "3400",
       old_price_year: "",
@@ -80,7 +80,7 @@ function AllPlans() {
       popular: true
     },
     {
-      title: 'ЗДОБУВАЧ ОСВІТИ «ПРОАКТИВНИЙ» 10-11 клас',
+      title: 'ЗДОБУВАЧ ОСВІТИ «ПРОАКТИВІСТ» 10-11 класи',
       old_price_month: "",
       price_month: "4000",
       old_price_year: "",
@@ -95,7 +95,7 @@ function AllPlans() {
       old_price_month: "",
       price_month: "від 99",
       old_price_year: "",
-      price_year: "",
+      price_year: "від 990",
       features: ["Повний доступ до освітнього процесу", "Комбіновані уроки з елементами анімації та мультиплікації, навчальні ігри та моделі 3D", "Постійний зв'язок із класним керівником", "ДПА в дистанційній формі", "Державний документ про освіту"],
       bg_color: "bg-gradient-to-br from-cyan-400 via-emerald-400 to-cyan-400",
       accent_color: "from-emerald-500 to-blue-500",
@@ -105,7 +105,7 @@ function AllPlans() {
       old_price_month: "",
       price_month: "від 149",
       old_price_year: "",
-      price_year: "",
+      price_year: "від 1490",
       features: ["Повний доступ до освітнього процесу", "Комбіновані уроки з елементами анімації та мультиплікації, навчальні ігри та моделі 3D", "Постійний зв'язок із класним керівником", "ДПА в дистанційній формі, а НМТ за місцем проживання", "Повна перевірка робіт", "Державний документ про освіту"],
       bg_color: "bg-gradient-to-br from-emerald-400 to-cyan-400",
       accent_color: "from-blue-500 to-cyan-500"
@@ -115,7 +115,7 @@ function AllPlans() {
       old_price_month: "",
       price_month: "від 499",
       old_price_year: "",
-      price_year: "",
+      price_year: "від 4990",
       features: ["Класний керівник", "Письмові та усні завдання від учителів", "Атестація знань", "Індивідуальні консультації", "Перегляд записів онлайн уроків", "Свідоцтво досягнень/табель", "Документ про освіту"],
       bg_color: "bg-gradient-to-br from-cyan-400 to-blue-400",
       accent_color: "from-cyan-500 to-emerald-500",
@@ -126,7 +126,7 @@ function AllPlans() {
       old_price_month: "",
       price_month: "від 599",
       old_price_year: "",
-      price_year: "",
+      price_year: "від 5990",
       features: ["Класний керівник","Письмові та усні завдання з перевіркою від учителів", "Письмовий чат і консультації онлайн з учителями ", "Інтерактивні платформи для вивчення іноземних мов(оплачуються додатково)", "Звіт про успішність", "Додатково можна отримати довідку про те, що дитина навчається дистанційно та виписку навчальних результатів", "Дистанційне проведення ДПА", "Документ про базову загальну середню освіту"],
       bg_color: "bg-gradient-to-br from-cyan-400 via-blue-400 to-cyan-400",
       accent_color: "from-emerald-500 to-blue-500",
@@ -137,7 +137,7 @@ function AllPlans() {
       old_price_month: "",
       price_month: "від 699",
       old_price_year: "",
-      price_year: "18000",
+      price_year: "від 6990",
       features: ["Класний керівник", "Письмові завдання з перевіркою від учителів", "Зв'язок із вчителями-предметниками", "Звіт про досягнення", "Атестація знань", "Контроль за успішність", "Онлайн консультації до НМТ", "Документ про повну загальну середню освіту державного зразка"],
       bg_color: "bg-gradient-to-br from-blue-400 to-cyan-400",
       accent_color: "from-blue-500 to-cyan-500",
