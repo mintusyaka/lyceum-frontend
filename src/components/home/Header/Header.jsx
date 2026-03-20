@@ -44,10 +44,10 @@ function Header() {
     accent: '#12C7B5',
 
     // Основний зелений колір кнопки CTA
-    green: '#08A84A',
+    green: '#ccff33',
 
     // Колір кнопки при наведенні
-    greenHover: '#ccff33',
+    greenHover: '#ffff66',
 
     // М’який блакитний колір для декоративного градієнта
     blueSoft: '#63B6D7',
