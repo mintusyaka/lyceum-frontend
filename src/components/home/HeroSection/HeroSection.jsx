@@ -33,7 +33,7 @@ function HeroSection() {
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-700 px-7 py-4 text-white font-semibold shadow-lg shadow-emerald-200 transition-all duration-300 hover:bg-emerald-800 hover:-translate-y-0.5 hover:shadow-xl"
+                className="inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-700 px-7 py-4 text-black font-semibold shadow-lg shadow-emerald-200 transition-all duration-300 hover:bg-emerald-800 hover:-translate-y-0.5 hover:shadow-xl"
               >
                 Записатися на консультацію
                 <ArrowRight className="w-5 h-5" />
