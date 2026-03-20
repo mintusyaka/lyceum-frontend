@@ -70,9 +70,9 @@ function PrimaryPlans() {
     {
       title: 'СІМЕЙНЕ НАВЧАННЯ (1-4 клас)',
       old_price_month: "",
-      price_month: "1000",
+      price_month: "від 499",
       old_price_year: "",
-      price_year: "10000",
+      price_year: "від 4990",
       features: ["Зв'язок з класним керівником", "Письмові та усні завдання від учителів", "Атестація знань", "Індивідуальні консультації", "Перегляд записів онлайн уроків", "Свідоцтво досягнень/табель", "Документ про освіту"],
       bg_color: "bg-gradient-to-br from-cyan-400 to-blue-400",
       accent_color: "from-cyan-500 to-emerald-500",
