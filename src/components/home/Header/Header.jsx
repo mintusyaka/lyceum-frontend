@@ -54,52 +54,49 @@ function Header() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 backdrop-blur-xl shadow-sm">
+      <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/95 backdrop-blur-xl shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between gap-4 py-4 lg:py-5">
-            {/* LEFT: Logo + Brand */}
-            <Link to="/" className="flex items-center gap-3 sm:gap-4 min-w-0 group">
-              <div className="flex h-14 w-14 sm:h-16 sm:w-16 items-center justify-center rounded-2xl bg-white shadow-md ring-1 ring-slate-200 overflow-hidden flex-shrink-0">
+            <Link to="/" className="flex items-center gap-4 min-w-0 flex-1">
+              <div className="flex h-14 w-14 sm:h-16 sm:w-16 lg:h-20 lg:w-20 items-center justify-center rounded-2xl bg-white shadow-sm ring-1 ring-slate-200 overflow-hidden flex-shrink-0">
                 <img
                   src={Logo}
                   alt="Логотип ліцею Проактивність"
-                  className="h-10 w-10 sm:h-12 sm:w-12 object-contain"
+                  className="h-10 w-10 sm:h-12 sm:w-12 lg:h-14 lg:w-14 object-contain"
                 />
               </div>
 
-              <div className="min-w-0">
-                <div className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-[11px] sm:text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1.5">
-                  Дистанційний ліцей
+              <div className="min-w-0 flex-1 max-w-[760px]">
+                <div className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-[11px] sm:text-xs font-semibold tracking-wide text-emerald-700 mb-2">
+                  ДИСТАНЦІЙНИЙ ЛІЦЕЙ
                 </div>
 
-                <div className="text-xl sm:text-2xl lg:text-3xl font-bold leading-tight text-slate-900 tracking-tight group-hover:text-emerald-700 transition-colors">
-                  «Проактивність»
+                <div className="text-[1.45rem] sm:text-[1.9rem] md:text-[2.2rem] lg:text-[2.8rem] xl:text-[3.1rem] font-bold leading-none tracking-tight text-slate-900">
+                  Ліцей «Проактивність»
                 </div>
 
-                <div className="hidden sm:block text-sm text-slate-500 leading-5">
+                <div className="mt-1 hidden md:block text-sm lg:text-base text-slate-500 leading-6">
                   Сучасна освіта для майбутнього
                 </div>
               </div>
             </Link>
 
-            {/* DESKTOP NAV */}
-            <nav className="hidden lg:flex items-center gap-2">
+            <nav className="hidden xl:flex items-center gap-1 flex-shrink-0">
               {navItems.map((item) => (
                 <Link
                   key={item.to}
                   to={item.to}
-                  className="rounded-xl px-4 py-2.5 text-sm font-medium text-slate-700 transition-all hover:bg-slate-100 hover:text-emerald-700"
+                  className="rounded-xl px-4 py-2.5 text-sm font-medium text-slate-700 transition-all hover:bg-emerald-50 hover:text-emerald-700"
                 >
                   {item.label}
                 </Link>
               ))}
             </nav>
 
-            {/* RIGHT ACTIONS */}
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 flex-shrink-0">
               <Link
                 to="/contacts"
-                className="hidden md:inline-flex items-center gap-2 rounded-xl bg-emerald-700 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-emerald-100 transition-all duration-300 hover:bg-emerald-800 hover:-translate-y-0.5"
+                className="hidden md:inline-flex items-center gap-2 rounded-xl bg-emerald-700 px-5 py-3 text-sm font-semibold text-white shadow-md transition-all duration-300 hover:bg-emerald-800 hover:shadow-lg"
               >
                 Подати заявку
                 <ArrowUpRight className="w-4 h-4" />
@@ -108,7 +105,7 @@ function Header() {
               <button
                 ref={menuButtonRef}
                 onClick={toggleMenu}
-                className="inline-flex lg:hidden items-center justify-center rounded-xl border border-slate-200 bg-white p-3 text-slate-700 shadow-sm transition-all hover:bg-slate-50 hover:text-emerald-700"
+                className="inline-flex xl:hidden items-center justify-center rounded-xl border border-slate-200 bg-white p-3 text-slate-700 shadow-sm transition-all hover:bg-slate-50 hover:text-emerald-700"
                 aria-label="Відкрити меню"
                 aria-expanded={isMenuOpen}
               >
@@ -119,10 +116,9 @@ function Header() {
         </div>
       </header>
 
-      {/* MOBILE MENU OVERLAY */}
       {isMenuOpen && (
-        <div className="fixed inset-0 z-[60] lg:hidden">
-          <div className="absolute inset-0 bg-slate-950/45 backdrop-blur-sm" />
+        <div className="fixed inset-0 z-[60] xl:hidden">
+          <div className="absolute inset-0 bg-slate-950/35 backdrop-blur-sm" />
 
           <div
             ref={menuPanelRef}
@@ -139,8 +135,8 @@ function Header() {
                 </div>
 
                 <div className="min-w-0">
-                  <div className="text-xs font-semibold uppercase tracking-wide text-emerald-700">
-                    Дистанційний ліцей
+                  <div className="text-[11px] font-semibold tracking-wide text-emerald-700">
+                    ДИСТАНЦІЙНИЙ ЛІЦЕЙ
                   </div>
                   <div className="text-lg font-bold text-slate-900 leading-tight">
                     «Проактивність»
@@ -175,20 +171,11 @@ function Header() {
               <Link
                 to="/contacts"
                 onClick={closeMenu}
-                className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-emerald-700 px-5 py-4 text-base font-semibold text-white shadow-lg shadow-emerald-100 transition-all hover:bg-emerald-800"
+                className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-emerald-700 px-5 py-4 text-base font-semibold text-white shadow-md transition-all hover:bg-emerald-800"
               >
                 Подати заявку
                 <ArrowUpRight className="w-5 h-5" />
               </Link>
-
-              <div className="mt-8 rounded-2xl bg-slate-50 p-4 ring-1 ring-slate-200">
-                <div className="text-sm font-semibold text-slate-900 mb-1">
-                  Сучасна освіта для майбутнього
-                </div>
-                <p className="text-sm leading-6 text-slate-600">
-                  Гнучкий формат навчання, підтримка батьків і фокус на реальному розвитку дитини.
-                </p>
-              </div>
             </div>
           </div>
         </div>
