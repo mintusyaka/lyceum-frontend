@@ -70,9 +70,9 @@ function HighPlans() {
     {
       title: 'ЕКСТЕРНАТ (10-11 клас)',
       old_price_month: "",
-      price_month: "від 4000",
+      price_month: "від 149",
       old_price_year: "",
-      price_year: "40000",
+      price_year: "від 1490",
       features: ["Повний доступ до освітнього процесу","Комбіновані уроки з елементами анімації та мультиплікації, навчальні ігри та моделі 3D","Постійний зв'язок із класним керівником","ДПА в дистанційній формі, а ЗНО/НМТ за місцем проживання","Повна перевірка робіт","Державний документ про освіту"],
       bg_color: "bg-gradient-to-br from-emerald-400 to-cyan-400",
       accent_color: "from-blue-500 to-cyan-500"
@@ -80,9 +80,9 @@ function HighPlans() {
     {
       title: 'СІМЕЙНЕ НАВЧАННЯ (10-11 клас)',
       old_price_month: "",
-      price_month: "від 1000",
+      price_month: "від 699",
       old_price_year: "",
-      price_year: "10000",
+      price_year: "від 6990",
       features: ["Зв'язок з класним керівником", "Письмові та усні завдання від учителів", "Атестація знань", "Індивідуальні консультації", "Перегляд записів онлайн уроків", "Свідоцтво досягнень/табель", "Документ про освіту"],
       bg_color: "bg-gradient-to-br from-cyan-400 to-blue-400",
       accent_color: "from-cyan-500 to-emerald-500",
