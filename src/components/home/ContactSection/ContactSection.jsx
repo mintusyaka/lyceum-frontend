@@ -17,7 +17,7 @@ import {
 // CONFIG (your contacts)
 // =====================
 const PHONE_TEL = '+380980230330';
-const PHONE_DISPLAY = '+38 (098) 023-03-30';
+const PHONE_DISPLAY = '+38 098 023 03 30';
 const PHONE_DIGITS = '380980230330';
 
 const EMAIL = 'ckdo.proactivity@gmail.com';
@@ -157,7 +157,7 @@ function ContactSection() {
     },
     {
       title: 'Instagram',
-      href: 'https://www.instagram.com/proactivity_lyceum_online?igsh=Mzl6OThhNXZrZ2Qw&utm_source=qr',
+      href: 'https://www.instagram.com/proaktivnist_school_ua?igsh=OXV1cW03emRpN251',
       icon: InstagramIcon,
       iconClass: 'text-pink-600',
       external: true
@@ -171,7 +171,7 @@ function ContactSection() {
     },
     {
       title: 'TikTok',
-      href: 'https://www.tiktok.com/@lyceum_proactivity_ua?_t=ZM-8xnrOP4y0Pt&_r=1',
+      href: 'https://www.tiktok.com/@liceum_proaktivity_ua?_r=1&_t=ZS-96vOmLRXRq8',
       icon: null,
       iconClass: 'text-gray-900',
       external: true,
