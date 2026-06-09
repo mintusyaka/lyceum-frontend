@@ -80,7 +80,7 @@ function ContactSection() {
     setIsSending(true);
 
     const formUrl =
-      'https://docs.google.com/spreadsheets/d/1YyhLUO1SZeA-z9VOlPLHzHl3emDxV0p4X9aMKAqbrUs/edit?usp=sharing';
+      'https://script.google.com/macros/s/AKfycbyK_OvGYIwLYrtiKxdGxBdzblx-8aYq5l6o9yJ0kjmaCr5_dDmDWM2pZ6XBnOcFQ0UTjg/exec';
 
     const formBody = new URLSearchParams();
     formBody.append('entry.1005394950', formData.parentName);
