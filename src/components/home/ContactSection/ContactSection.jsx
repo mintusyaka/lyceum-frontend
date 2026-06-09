@@ -23,7 +23,7 @@ const PHONE_DIGITS = '380980230330';
 const EMAIL = 'ckdo.proactivity@gmail.com';
 
 const FORM_ENDPOINT =
-  'https://script.google.com/macros/s/AKfycbyK_OvGYIwLYrtiKxdGxBdzblx-8aYq5l6o9yJ0kjmaCr5_dDmDWM2pZ6XBnOcFQ0UTjg/exec';
+  'https://script.google.com/macros/s/AKfycbzmRuUpCadOqf8fDb3JfF6nNORuyzgqj6qC70pWonFV9KIYJKzIuXsgEdErzpM_Sg-Ipg/exec';
 
 const TELEGRAM_APP_LINK = 'tg://resolve?phone=380980230330';
 const TELEGRAM_WEB_LINK = 'https://t.me/+380980230330';
