@@ -14,7 +14,7 @@ import {
 } from 'lucide-react';
 
 // =====================
-// CONFIG (your contacts)
+// CONFIG
 // =====================
 const PHONE_TEL = '+380980230330';
 const PHONE_DISPLAY = '+38 098 023 03 30';
@@ -22,8 +22,9 @@ const PHONE_DIGITS = '380980230330';
 
 const EMAIL = 'ckdo.proactivity@gmail.com';
 
-// Telegram by phone: Telegram не дає стабільну web-ссилку на акаунт по номеру.
-// Лишаємо твою логіку: спроба відкрити app + fallback.
+const FORM_ENDPOINT =
+  'https://script.google.com/macros/s/AKfycbyK_OvGYIwLYrtiKxdGxBdzblx-8aYq5l6o9yJ0kjmaCr5_dDmDWM2pZ6XBnOcFQ0UTjg/exec';
+
 const TELEGRAM_APP_LINK = 'tg://resolve?phone=380980230330';
 const TELEGRAM_WEB_LINK = 'https://t.me/+380980230330';
 
@@ -79,29 +80,26 @@ function ContactSection() {
     e.preventDefault();
     setIsSending(true);
 
-    const formUrl =
-      'https://script.google.com/macros/s/AKfycbyK_OvGYIwLYrtiKxdGxBdzblx-8aYq5l6o9yJ0kjmaCr5_dDmDWM2pZ6XBnOcFQ0UTjg/exec';
-
     const formBody = new URLSearchParams();
-    formBody.append('entry.1005394950', formData.parentName);
-    formBody.append('entry.139863884', formData.studentName);
-    formBody.append('entry.874705588', formData.phone);
-    formBody.append('entry.123218155', formData.email);
-    formBody.append('entry.1184347914', formData.grade);
-    formBody.append('entry.881893326', formData.interests);
-    formBody.append('entry.778340436', formData.message);
+
+    formBody.append('parentName', formData.parentName);
+    formBody.append('studentName', formData.studentName);
+    formBody.append('phone', formData.phone);
+    formBody.append('email', formData.email);
+    formBody.append('grade', formData.grade);
+    formBody.append('interests', formData.interests);
+    formBody.append('message', formData.message);
+    formBody.append('pageUrl', window.location.href);
 
     try {
-      await fetch(formUrl, {
+      await fetch(FORM_ENDPOINT, {
         method: 'POST',
         mode: 'no-cors',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded'
-        },
-        body: formBody.toString()
+        body: formBody
       });
 
       setIsSubmitted(true);
+
       setTimeout(() => {
         setIsSubmitted(false);
         setFormData({
@@ -116,6 +114,7 @@ function ContactSection() {
       }, 3000);
     } catch (error) {
       console.error('Помилка надсилання:', error);
+      alert('Помилка надсилання заявки. Спробуйте ще раз.');
     } finally {
       setIsSending(false);
     }
@@ -200,7 +199,6 @@ function ContactSection() {
         </div>
 
         <div className="grid items-start gap-10 lg:grid-cols-[1fr_1.15fr]">
-          {/* LEFT SIDE */}
           <div className="space-y-6">
             <div className="rounded-[30px] bg-white p-8 shadow-xl shadow-emerald-50 ring-1 ring-slate-200">
               <div className="mb-6 flex items-start justify-between gap-4">
@@ -299,7 +297,6 @@ function ContactSection() {
             </div>
           </div>
 
-          {/* RIGHT SIDE / FORM */}
           <div className="rounded-[34px] bg-white p-8 shadow-2xl shadow-emerald-100 ring-1 ring-slate-200 sm:p-10">
             <div className="mb-8">
               <div className="mb-4 h-1.5 w-28 rounded-full bg-gradient-to-r from-emerald-600 via-cyan-600 to-blue-600"></div>
