@@ -24,32 +24,46 @@ function HighPlans() {
     }));
   };
 
-  const handleSubmit = () => {
-    if (!formData.name.trim() || !formData.phone.trim()) {
-      alert('Будь ласка, заповніть всі обов\'язкові поля');
-      return;
-    }
-    
-    const googleFormUrl = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSdMWqj5HexBu3lH3RF1ERoR_60f4634Lic8xopOFhMFNgp1bQ/formResponse';
-    
-    const submitData = new FormData();
-    submitData.append('entry.634840961', formData.name);
-    submitData.append('entry.1757251368', formData.phone);
-    submitData.append('entry.1916382504', formData.message);
-    submitData.append('entry.403844381', selectedPlan);
-    
-    fetch(googleFormUrl, {
+  const handleSubmit = async (e) => {
+  if (e) {
+    e.preventDefault();
+  }
+
+  if (!formData.name.trim() || !formData.phone.trim()) {
+    alert('Будь ласка, заповніть всі обовʼязкові поля');
+    return;
+  }
+
+  const formUrl =
+    'https://script.google.com/macros/s/AKfycbxgsNDBOf-QuhCEiNc6sQHvTDW5hqqcCk62oQP2Pgz5IgL5eigz5Lmsdb2OfTiFGxeMlg/exec';
+
+  const formBody = new URLSearchParams();
+
+  formBody.append('formType', 'short');
+  formBody.append('name', formData.name);
+  formBody.append('phone', formData.phone);
+  formBody.append('pageUrl', window.location.href);
+
+  try {
+    await fetch(formUrl, {
       method: 'POST',
-      body: submitData,
-      mode: 'no-cors'
-    }).then(() => {
-      alert('Дякуємо! Ваша заявка надіслана. Ми зв\'яжемося з вами найближчим часом.');
-      setIsModalOpen(false);
-      setFormData({ name: '', phone: '', message: '' });
-    }).catch(() => {
-      alert('Виникла помилка. Спробуйте ще раз.');
+      mode: 'no-cors',
+      body: formBody
     });
-  };
+
+    alert('Дякуємо! Заявку надіслано.');
+
+    setFormData({
+      ...formData,
+      name: '',
+      phone: ''
+    });
+
+  } catch (error) {
+    console.error('Помилка надсилання:', error);
+    alert('Помилка надсилання заявки. Спробуйте ще раз.');
+  }
+};
 
   const closeModal = () => {
     setIsModalOpen(false);
