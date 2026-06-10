@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { CheckCircle, X, Calendar, Clock } from 'lucide-react';
 
 const FORM_ENDPOINT =
-  'https://script.google.com/macros/s/AKfycbxgsNDBOf-QuhCEiNc6sQHvTDW5hqqcCk62oQP2Pgz5IgL5eigz5Lmsdb2OfTiFGxeMlg/exec';
+  'https://script.google.com/macros/s/AKfycbyg7SwmYOyB9_40DynBk5rYfVIs7BNBaX_iY0LYLX9sR63gcWfKjGZ7-zOZC9ALCWE5/exec';
 
 function MiddlePlans() {
   const [isModalOpen, setIsModalOpen] = useState(false);
